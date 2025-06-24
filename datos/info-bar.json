@@ -1,0 +1,10 @@
+{
+  "nombreBar": "Bar Atenea",
+  "direccion": "Av. de Orovilla, 46, Villaverde, 28041 Madrid",
+  "telefono": "918791714",
+  "email": "info@baratenea.com",
+  "horario": "Lunes a Domingos: 7:00 - 00:00",
+  "ciudad": "Madrid",
+  "logo": "imagenes/logo-bar.png",
+  "banner": "imagenes/banner-bar.jpg"
+}

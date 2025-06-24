@@ -1,0 +1,131 @@
+[
+  {
+    "categoria": "Desayunos",
+    "productos": [
+      {"nombre": "Café + Tostada", "descripcion": "Café con leche y tostada de pan rústico con tomate y aceite de oliva virgen extra.", "precio": "3,50€"},
+      {"nombre": "Croissant + Zumo", "descripcion": "Croissant a la plancha con mantequilla y zumo de naranja natural recién exprimido.", "precio": "4,00€"},
+      {"nombre": "Tostada de Jamón Ibérico", "descripcion": "Tostada de pan de pueblo con jamón ibérico y tomate.", "precio": "4,20€"},
+      {"nombre": "Bollería Artesana", "descripcion": "Selección de bollería fresca del día: napolitanas, ensaimadas y más.", "precio": "2,80€"},
+      {"nombre": "Café solo", "descripcion": "Café espresso intenso, 100% arábica.", "precio": "1,30€"},
+      {"nombre": "Té Gourmet", "descripcion": "Selección de tés e infusiones premium.", "precio": "1,80€"},
+      {"nombre": "Tostada de Aguacate", "descripcion": "Pan multicereal con aguacate, tomate y semillas.", "precio": "3,90€"},
+      {"nombre": "Tortilla Española", "descripcion": "Porción de tortilla de patatas casera.", "precio": "2,50€"},
+      {"nombre": "Yogur con Fruta", "descripcion": "Yogur natural con fruta fresca y granola.", "precio": "3,20€"},
+      {"nombre": "Zumo Detox", "descripcion": "Zumo natural de frutas y verduras de temporada.", "precio": "3,00€"}
+    ]
+  },
+  {
+    "categoria": "Raciones",
+    "productos": [
+      {"nombre": "Calamares a la Romana", "descripcion": "Ración de calamares frescos rebozados y crujientes.", "precio": "9,00€"},
+      {"nombre": "Patatas Bravas", "descripcion": "Patatas doradas con salsa brava casera y alioli suave.", "precio": "6,00€"},
+      {"nombre": "Ensaladilla Rusa", "descripcion": "Ensaladilla cremosa con atún, huevo y encurtidos.", "precio": "7,00€"},
+      {"nombre": "Queso Manchego", "descripcion": "Porción de queso curado D.O. Manchego.", "precio": "7,50€"},
+      {"nombre": "Chorizo a la Sidra", "descripcion": "Chorizo asturiano cocido en sidra natural.", "precio": "6,50€"},
+      {"nombre": "Croquetas Caseras", "descripcion": "Croquetas de jamón ibérico y pollo, receta tradicional.", "precio": "7,20€"},
+      {"nombre": "Pulpo a la Gallega", "descripcion": "Pulpo con cachelos, pimentón y aceite de oliva.", "precio": "12,00€"},
+      {"nombre": "Tortilla de Patatas", "descripcion": "Porción de tortilla jugosa, recién hecha.", "precio": "5,00€"},
+      {"nombre": "Pimientos de Padrón", "descripcion": "Pimientos verdes fritos con sal gruesa.", "precio": "5,80€"},
+      {"nombre": "Tabla de Ibéricos", "descripcion": "Selección de jamón, lomo y chorizo ibérico.", "precio": "13,00€"}
+    ]
+  },
+  {
+    "categoria": "Hamburguesas",
+    "productos": [
+      {"nombre": "Hamburguesa Clásica", "descripcion": "Carne de vacuno, lechuga, tomate, cebolla y queso cheddar.", "precio": "7,50€"},
+      {"nombre": "BBQ Burger", "descripcion": "Hamburguesa con bacon, queso y salsa barbacoa.", "precio": "8,00€"},
+      {"nombre": "Hamburguesa Vegana", "descripcion": "Hamburguesa vegetal con aguacate y rúcula.", "precio": "7,80€"},
+      {"nombre": "Cheeseburger Doble", "descripcion": "Doble carne y doble queso cheddar fundido.", "precio": "8,50€"},
+      {"nombre": "Hamburguesa de Pollo", "descripcion": "Pechuga de pollo crujiente, lechuga y mayonesa.", "precio": "7,60€"},
+      {"nombre": "Burger Atenea", "descripcion": "Carne de vacuno, cebolla caramelizada, queso de cabra y salsa especial.", "precio": "9,00€"},
+      {"nombre": "Hamburguesa Tex-Mex", "descripcion": "Carne, jalapeños, cheddar, guacamole y nachos.", "precio": "8,80€"},
+      {"nombre": "Hamburguesa de Setas", "descripcion": "Carne, setas salteadas y queso brie.", "precio": "8,20€"},
+      {"nombre": "Mini Burgers (3u)", "descripcion": "Tres mini hamburguesas variadas.", "precio": "8,90€"},
+      {"nombre": "Hamburguesa de Pavo", "descripcion": "Carne de pavo, espinacas y salsa yogur.", "precio": "7,70€"}
+    ]
+  },
+  {
+    "categoria": "Sandwiches",
+    "productos": [
+      {"nombre": "Sándwich Mixto", "descripcion": "Jamón york y queso fundido en pan de molde.", "precio": "4,50€"},
+      {"nombre": "Sándwich Vegetal", "descripcion": "Lechuga, tomate, huevo, atún y mayonesa.", "precio": "5,00€"},
+      {"nombre": "Sándwich Club", "descripcion": "Pollo, bacon, lechuga, tomate y mayonesa.", "precio": "5,80€"},
+      {"nombre": "Sándwich de Atún", "descripcion": "Atún, huevo duro y mayonesa.", "precio": "4,90€"},
+      {"nombre": "Sándwich de Pollo", "descripcion": "Pollo a la plancha, lechuga y salsa césar.", "precio": "5,50€"},
+      {"nombre": "Sándwich Caprese", "descripcion": "Mozzarella, tomate, albahaca y aceite de oliva.", "precio": "5,20€"},
+      {"nombre": "Sándwich Bacon y Queso", "descripcion": "Bacon crujiente y queso fundido.", "precio": "5,30€"},
+      {"nombre": "Sándwich Noruego", "descripcion": "Salmón ahumado, queso crema y rúcula.", "precio": "6,00€"},
+      {"nombre": "Sándwich de Jamón Ibérico", "descripcion": "Jamón ibérico y tomate en pan rústico.", "precio": "6,20€"},
+      {"nombre": "Sándwich Dulce", "descripcion": "Crema de cacao y plátano.", "precio": "4,20€"}
+    ]
+  },
+  {
+    "categoria": "Bebidas",
+    "productos": [
+      {"nombre": "Coca-Cola", "descripcion": "Botella 33cl bien fría.", "precio": "2,00€"},
+      {"nombre": "Cerveza", "descripcion": "Caña o botellín de cerveza nacional.", "precio": "2,20€"},
+      {"nombre": "Agua Mineral", "descripcion": "Botella 50cl, fría o del tiempo.", "precio": "1,20€"},
+      {"nombre": "Zumo de Naranja", "descripcion": "Natural recién exprimido.", "precio": "2,20€"},
+      {"nombre": "Tinto de Verano", "descripcion": "Vino tinto con gaseosa y rodaja de limón.", "precio": "2,50€"},
+      {"nombre": "Café con Hielo", "descripcion": "Café espresso servido con hielo.", "precio": "1,50€"},
+      {"nombre": "Vermú de Grifo", "descripcion": "Vermú rojo servido frío con aceituna.", "precio": "2,80€"},
+      {"nombre": "Refresco Limón", "descripcion": "Refresco de limón 33cl.", "precio": "2,00€"},
+      {"nombre": "Agua con Gas", "descripcion": "Botella 33cl.", "precio": "1,80€"},
+      {"nombre": "Copa de Vino", "descripcion": "Vino tinto o blanco de la casa.", "precio": "2,50€"}
+    ]
+  },
+  {
+    "categoria": "Bocadillos",
+    "productos": [
+      {"nombre": "Bocadillo de Lomo", "descripcion": "Lomo a la plancha con pimientos verdes.", "precio": "5,00€"},
+      {"nombre": "Bocadillo de Tortilla", "descripcion": "Tortilla de patatas o francesa en pan crujiente.", "precio": "4,50€"},
+      {"nombre": "Bocadillo de Jamón Ibérico", "descripcion": "Jamón ibérico y tomate en pan rústico.", "precio": "5,50€"},
+      {"nombre": "Bocadillo Vegetal", "descripcion": "Lechuga, tomate, atún y mayonesa.", "precio": "4,80€"},
+      {"nombre": "Bocadillo de Pollo", "descripcion": "Pollo a la plancha, lechuga y salsa césar.", "precio": "5,20€"},
+      {"nombre": "Bocadillo de Calamares", "descripcion": "Calamares a la romana en pan crujiente.", "precio": "5,80€"},
+      {"nombre": "Bocadillo de Bacon y Queso", "descripcion": "Bacon crujiente y queso fundido.", "precio": "5,30€"},
+      {"nombre": "Bocadillo de Chorizo", "descripcion": "Chorizo a la sidra en pan de pueblo.", "precio": "4,90€"},
+      {"nombre": "Bocadillo de Atún", "descripcion": "Atún, huevo duro y mayonesa.", "precio": "4,70€"},
+      {"nombre": "Bocadillo Especial Atenea", "descripcion": "Lomo, queso, pimientos y huevo.", "precio": "6,00€"}
+    ]
+  },
+  {
+    "categoria": "Postres",
+    "productos": [
+      {"nombre": "Tarta de Queso", "descripcion": "Con base de galleta y mermelada de frutos rojos.", "precio": "4,00€"},
+      {"nombre": "Brownie de Chocolate", "descripcion": "Brownie casero con nueces y helado de vainilla.", "precio": "4,50€"},
+      {"nombre": "Helado Artesano", "descripcion": "Helado de vainilla, chocolate o fresa.", "precio": "2,50€"},
+      {"nombre": "Fruta de Temporada", "descripcion": "Porción de fruta fresca del día.", "precio": "2,00€"},
+      {"nombre": "Tarta de Zanahoria", "descripcion": "Bizcocho de zanahoria con frosting de queso.", "precio": "4,20€"},
+      {"nombre": "Coulant de Chocolate", "descripcion": "Bizcocho caliente con corazón líquido de chocolate.", "precio": "4,80€"},
+      {"nombre": "Tarta de Manzana", "descripcion": "Tarta fina de manzana con crema pastelera.", "precio": "4,00€"},
+      {"nombre": "Helado de Yogur", "descripcion": "Helado suave de yogur con frutas.", "precio": "2,80€"},
+      {"nombre": "Tarta Sacher", "descripcion": "Bizcocho de chocolate y mermelada de albaricoque.", "precio": "4,60€"},
+      {"nombre": "Macedonia de Frutas", "descripcion": "Ensalada de frutas frescas.", "precio": "2,90€"}
+    ]
+  },
+  {
+    "categoria": "Promociones",
+    "productos": [
+      {"nombre": "Desayuno 2x1", "descripcion": "De lunes a viernes hasta las 12h. Café + tostada para dos al precio de uno.", "precio": "3,50€"},
+      {"nombre": "Hamburguesa + Bebida", "descripcion": "Hamburguesa clásica y bebida a precio especial.", "precio": "9,00€"},
+      {"nombre": "Tapa + Caña", "descripcion": "Tapa del día y caña de cerveza.", "precio": "3,00€"},
+      {"nombre": "Menú del Día", "descripcion": "Plato principal, bebida y postre.", "precio": "11,00€"},
+      {"nombre": "Happy Hour", "descripcion": "2x1 en cervezas de 18:00 a 20:00.", "precio": "2,20€"},
+      {"nombre": "Combo Bocadillo + Refresco", "descripcion": "Bocadillo a elegir y refresco.", "precio": "6,00€"},
+      {"nombre": "Café + Bollería", "descripcion": "Café y pieza de bollería a precio reducido.", "precio": "2,80€"},
+      {"nombre": "Tarta + Café", "descripcion": "Porción de tarta y café.", "precio": "4,50€"},
+      {"nombre": "Cena para Dos", "descripcion": "Menú especial para dos personas.", "precio": "22,00€"},
+      {"nombre": "Descuento Estudiantes", "descripcion": "10% de descuento con carnet universitario.", "precio": "-10%"}
+    ]
+  }, 
+  {
+    "categoria": "Contacto",
+    "productos": [
+      {"nombre": "Dirección", "descripcion": "Calle Atenea 123, Ciudad", "precio": ""},
+      {"nombre": "Teléfono", "descripcion": "+34 123 456 789", "precio": ""},
+      {"nombre": "Email", "descripcion": "info@baratenea.com", "precio": ""},
+      {"nombre": "Horario", "descripcion": "Lunes a Domingo: 7:00 - 23:00", "precio": ""}
+    ]
+  }
+]

@@ -140,9 +140,9 @@ function crearStickyHeader() {
   stickyHeader = document.createElement('div');
   stickyHeader.className = 'sticky-header';
   stickyHeader.innerHTML = `
-    <div class="sticky-banner-bg"><img src='../imagenes/banner-bar.jpg' alt='Banner Bar Atenea'></div>
+    <div class="sticky-banner-bg"><img src='imagenes/banner-bar.jpg' alt='Banner Bar Atenea'></div>
     <div class="sticky-header-row" style="display:flex;align-items:center;gap:0.7rem;z-index:2;position:relative;">
-      <div class="sticky-logo"><img src="../imagenes/logo-bar.png" alt="Logo Bar Atenea"></div>
+      <div class="sticky-logo"><img src="imagenes/logo-bar.png" alt="Logo Bar Atenea"></div>
       <div class="sticky-title">Bar Atenea</div>
     </div>
     <nav class="nav-scroll-wrapper sticky-nav">

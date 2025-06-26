@@ -1,3 +1,104 @@
+/* =========================
+   VARIABLES CSS (rellenadas por info-bar.json)
+   ========================= */
+:root {
+  /* ====== Colores generales de la web ====== */
+  --color-header-bg: #1e1e1e;
+  --color-header-border: #2a2a2a;
+  --color-logo-bg: #fff;
+  --color-logo-shadow: #0003;
+  --color-logo: #FFD600;
+
+  --color-top-banner-bg: #232323;
+  --color-banner-bg: #232323;
+  --color-banner-overlay: #232323cc;
+  --color-bg-main: #181818;
+
+  --color-bar-title: #fff;
+  --color-bar-title-h1: #ffc107;
+  --color-bar-title-h1-shadow: #0008;
+  --color-bar-address: #fff;
+  --color-bar-address-shadow: #000a;
+  --color-bar-name: #FFD600;
+
+  /* ====== Navegación ====== */
+  --color-nav-bg: #232323;
+  --color-nav-shadow: #0002;
+  --color-nav-border: #ffc10722;
+  --color-nav-border-bottom: #ffbf00;
+  --color-nav-border: #ffc107;
+  --color-nav-scrollbar-thumb: #ffc107;
+  --color-nav-scrollbar-bg: #232323;
+  --color-nav-text: #fff;
+  --color-nav-active: #ffc107;
+  --color-nav-active-bg: transparent;
+  --color-nav-hover-bg: transparent;
+  --color-nav-hover-text: #ffc107;
+  --color-nav-underline: #ffc107;
+  --color-nav-underline-shadow: #ffc10788;
+
+  /* ====== Tarjetas de productos ====== */
+  --color-card-bg: #232323;
+  --color-card-bg-gradient: #181818;
+  --color-card-border: #232323;
+  --color-card-title-shadow: #0006;
+  --color-card-text: #eee;
+  --color-card-price-bg: #232323;
+  --color-card-price: #fff;
+  --color-card-price-shadow: #ffc10722;
+
+  /* ====== Sticky header ====== */
+  --color-sticky-bg: #232323;
+  --color-sticky-shadow: #0005;
+  --color-sticky-logo-bg: #fff;
+  --color-sticky-logo-shadow: #0002;
+  --color-sticky-title: #ffc107;
+  --color-sticky-title-shadow: #0008;
+
+  /* ====== Contacto ====== */
+  --color-contact-bg: #232323;
+  --color-contact-gradient: #181818;
+  --color-contact-shadow: #0005;
+  --color-contact-shadow-yellow: #ffc10722;
+  --color-contact-title: #ffc107;
+  --color-contact-title-shadow: #0008;
+  --color-contact-text: #fff;
+  --color-contact-label: #ffc107;
+  --color-contact-box: #181818cc;
+  --color-contact-box-shadow: #0002;
+  --color-contact-btn-bg: #ffc107;
+  --color-contact-btn-text: #232323;
+  --color-contact-btn-hover-bg: #ffb300;
+  --color-contact-btn-hover-text: #232323;
+  --color-contact-btn-contactar-bg: #FFD600;
+  --color-contact-btn-contactar-text: #232323;
+  --color-contact-btn-contactar-hover-bg: #FFB300;
+  --color-contact-btn-contactar-hover-text: #232323;
+  --color-contact-btn-contactar-shadow: #ffc107;
+  --color-contact-btn-contactar-shadow2: #ffc10755;
+  --color-contact-btn-contactar-hover-shadow: #ffc107aa;
+
+  /* ====== Footer ====== */
+  --color-footer-bg: #232323;
+  --color-footer-text: #FFD600;
+  --color-footer-link: #FFD600;
+  --color-footer-link-hover: #fffbe7;
+  --color-footer-border: #ffc107;
+  --color-logo-shadow-anim: #ffc10755;
+
+  /* ====== Efectos generales ====== */
+  --color-efecto-amarillo: #FFD600;
+  --color-yellow-effect: #FFD600;
+
+  /* ====== Personalización de productos ====== */
+  --color-product-title: #ffc107;              
+  --color-product-title-hover: #fff;           
+  --color-product-card-border-hover: #ffb300;  
+}
+
+/* =========================
+   RESET Y BASE
+   ========================= */
 * {
   margin: 0;
   padding: 0;
@@ -6,17 +107,17 @@
 
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #181818;
-  color: white;
+  background-color: var(--color-bg-main);
+  color: var(--color-bar-title);
 }
 
 header {
-  background-color: #1e1e1e;
+  background-color: var(--color-header-bg);
   padding: 1rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 2px solid #2a2a2a;
+  border-bottom: 2px solid var(--color-header-border);
 }
 
 .logo {
@@ -27,6 +128,9 @@ header {
 
 .logo img {
   height: 50px;
+  background: var(--color-logo-bg);
+  box-shadow: 0 2px 12px var(--color-logo-shadow);
+  /* Si es SVG, puedes usar filter: o fill: var(--color-logo); */
 }
 
 .top-banner-mix {
@@ -34,12 +138,12 @@ header {
   width: 100vw;
   max-width: 100vw;
   overflow: hidden;
-  margin-bottom: 0; /* Eliminar espacio entre banner y navegador */
-  background: #232323 !important;
+  margin-bottom: 0;
+  background: var(--color-top-banner-bg) !important;
   z-index: 10;
 }
 .banner-bg {
-  background: #232323 !important;
+  background: var(--color-banner-bg) !important;
   width: 100vw;
   max-width: 100vw;
   height: 140px;
@@ -57,7 +161,7 @@ header {
 .banner-overlay {
   position: absolute;
   top: 0; left: 0; right: 0; bottom: 0;
-  background: #232323cc; /* Fondo sólido y opaco, sin gradiente */
+  background: var(--color-banner-overlay);
   z-index: 1;
 }
 .top-header-content {
@@ -74,13 +178,13 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #fff;
+  background: var(--color-logo-bg);
   border-radius: 10px;
   width: 90px;
   height: 90px;
   min-width: 90px;
   min-height: 90px;
-  box-shadow: 0 2px 12px #0003;
+  box-shadow: 0 2px 12px var(--color-logo-shadow);
   overflow: hidden;
 }
 .logo-container img {
@@ -92,34 +196,34 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  color: #fff;
+  color: var(--color-bar-title);
 }
 .bar-title h1 {
   font-size: 2.1rem;
   font-weight: bold;
   margin-bottom: 0.2rem;
-  color: #ffc107;
-  text-shadow: 0 2px 8px #0008;
+  color: var(--color-bar-name);
+  text-shadow: 0 2px 8px var(--color-bar-title-h1-shadow);
 }
 .bar-address {
   font-size: 1.1rem;
-  color: #fff;
-  text-shadow: 0 1px 6px #000a;
+  color: var(--color-bar-address);
+  text-shadow: 0 1px 6px var(--color-bar-address-shadow);
   margin-top: 0.2rem;
 }
 .top-banner-mix, .nav-scroll-wrapper {
-  background: #232323;
-  box-shadow: 0 2px 12px #0002;
+  background: var(--color-nav-bg);
+  box-shadow: 0 2px 12px var(--color-nav-shadow);
   overflow-x: auto;
-  border-bottom: 2px solid #ffc10722;
+  border-bottom: 2px solid var(--color-nav-border-bottom);
   display: flex;
   justify-content: center;
 }
 
 .nav-scroll-wrapper {
-  background: #232323 !important;
+  background: var(--color-nav-bg) !important;
   z-index: 11;
-  border-bottom: 2px solid #ffc10722;
+  border-bottom: 2px solid var(--color-nav-border);
   width: 100vw;
   max-width: 100vw;
   overflow-x: auto;
@@ -128,16 +232,16 @@ header {
   margin: 0;
   display: block;
   scrollbar-width: thin;
-  scrollbar-color: #ffc107 #232323;
-  margin-bottom: 0; /* Asegurar que no hay separación extra */
+  scrollbar-color: var(--color-nav-scrollbar-thumb) var(--color-nav-scrollbar-bg);
+  margin-bottom: 5px; /* Aumenta el espacio debajo del navegador */
 }
 
 .nav-scroll-wrapper::-webkit-scrollbar {
   height: 8px;
-  background: #232323;
+  background: var(--color-nav-scrollbar-bg);
 }
 .nav-scroll-wrapper::-webkit-scrollbar-thumb {
-  background: #ffc107;
+  background: var(--color-nav-scrollbar-thumb);
   border-radius: 6px;
 }
 
@@ -149,11 +253,13 @@ header {
   gap: 0.5rem;
   list-style: none;
   margin: 0;
-  padding: 0.5rem 0.5rem 0.3rem 0.5rem;
+  padding: 0.5px 0px 5.5px 0.3px;
   min-width: 100vw;
   width: max-content;
   overflow-x: auto;
   overflow-y: hidden;
+  height: 100%;
+  /* Centrar vertical y horizontalmente los elementos li */
 }
 
 .nav-list::-webkit-scrollbar {
@@ -166,7 +272,7 @@ header {
   padding: 0.45rem 0.9rem 0.18rem 0.9rem;
   border-radius: 6px 6px 0 0;
   font-weight: 500;
-  color: #fff;
+  color: var(--color-nav-text);
   background: none;
   transition: color 0.18s, background 0.18s;
   font-size: 1rem;
@@ -174,18 +280,21 @@ header {
   outline: none;
   position: relative;
   cursor: pointer;
+  display: flex;
+  align-items: center;      /* Centra verticalmente el texto */
+  justify-content: center;  /* Centra horizontalmente el texto */
+  height: 100%;
 }
 .nav-list li:hover, .nav-list li:focus {
-  /* Eliminar cualquier efecto visual en hover/focus */
-  background: none !important;
-  color: inherit !important;
+  background: var(--color-nav-hover-bg) !important;
+  color: var(--color-nav-hover-text) !important;
   box-shadow: none !important;
   transform: none !important;
 }
 .nav-list li.active {
-  color: #ffc107 !important;
+  color: var(--color-nav-active) !important;
   font-weight: bold;
-  background: none;
+  background: var(--color-nav-active-bg);
 }
 .nav-list li .indicator {
   display: none;
@@ -199,9 +308,8 @@ header {
   bottom: -6px;
   height: 3px;
   border-radius: 2px;
-  background: #ffc107;
-  box-shadow: 0 2px 8px #ffc10788;
-  /* Eliminar animación */
+  background: var(--color-nav-underline);
+  box-shadow: 0 2px 8px var(--color-nav-underline-shadow);
 }
 @keyframes fadeInIndicator {
   from { opacity: 0; transform: translateX(-50%) scaleX(0.5); }
@@ -214,7 +322,7 @@ header {
   }
   .nav-list {
     gap: 0.7rem;
-    padding: 0.5rem 0.1rem 0.3rem 0.1rem;
+    padding: 0.5px 0px 6.5px 0.3px;
   }
   .nav-list li {
     min-width: 90px;
@@ -280,48 +388,57 @@ header {
 
 /* Mejorar cards de productos */
 .card {
-  background: linear-gradient(135deg, #232323 70%, #181818 100%);
+  background: linear-gradient(135deg, var(--color-card-bg) 70%, var(--color-card-bg-gradient) 100%);
   padding: 1.2rem 1rem 1.1rem 1rem;
   border-radius: 16px;
-  box-shadow: 0 4px 24px #0004, 0 1.5px 8px #ffc10722;
   transition: transform 0.25s, box-shadow 0.25s, border 0.2s;
-  border: 1.5px solid #232323;
+  border: 1.5px solid var(--color-card-border);
   position: relative;
   overflow: hidden;
   min-height: 140px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  margin-bottom: 5px; /* Espacio entre productos */
 }
-.card:hover {
-  transform: translateY(-6px) scale(1.03);
-  box-shadow: 0 8px 32px #ffc10733, 0 2px 12px #0006;
-  border: 1.5px solid #ffc107;
-}
+
+/* Título de producto (h3) sin hover */
 .card h3 {
   margin-bottom: 0.5rem;
   font-size: 1.25rem;
-  color: #ffc107;
+  color: var(--color-product-title);
   font-weight: bold;
   letter-spacing: 0.5px;
-  text-shadow: 0 2px 8px #0006;
+  text-shadow: 0 2px 8px var(--color-card-title-shadow);
+  transition: color 0.18s;
 }
+
+/* Título de producto (h3) con hover */
+.card:hover h3 {
+  color: var(--color-product-title-hover);
+}
+
+/* Efecto del borde de la card al hacer hover */
+.card:hover {
+  border: 1.5px solid var(--color-product-card-border-hover);
+}
+
 .card p {
   font-size: 1.02rem;
-  color: #eee;
+  color: var(--color-card-text);
   margin-bottom: 0.7rem;
   flex: 1 1 auto;
 }
 .card .price {
   margin-top: 0.8rem;
-  color: #fff;
+  color: var(--color-card-price);
   font-weight: bold;
   font-size: 1.1rem;
-  background: #232323;
+  background: var(--color-card-price-bg);
   padding: 0.3rem 0.8rem;
   border-radius: 8px;
   align-self: flex-end;
-  box-shadow: 0 1px 6px #ffc10722;
+  box-shadow: 0 1px 6px var(--color-card-price-shadow);
 }
 @media (max-width: 900px) {
   .card {
@@ -363,8 +480,8 @@ header {
   left: 0;
   width: 100vw;
   z-index: 1000;
-  background: #232323 !important;
-  box-shadow: 0 2px 12px #0005;
+  background: var(--color-sticky-bg) !important;
+  box-shadow: 0 2px 12px var(--color-sticky-shadow);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -397,11 +514,11 @@ header {
   min-width: 38px;
   min-height: 38px;
   border-radius: 7px;
-  background: #fff;
+  background: var(--color-sticky-logo-bg);
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 1px 6px #0002;
+  box-shadow: 0 1px 6px var(--color-sticky-logo-shadow);
   overflow: hidden;
 }
 .sticky-header .sticky-logo img {
@@ -412,10 +529,10 @@ header {
 .sticky-title {
   font-size: 1.15rem;
   font-weight: bold;
-  color: #ffc107;
+  color: var(--color-sticky-title);
   text-align: left;
   letter-spacing: 1px;
-  text-shadow: 0 2px 8px #0008;
+  text-shadow: 0 2px 8px var(--color-sticky-title-shadow);
   flex: 1 1 auto;
 }
 .sticky-header .sticky-banner-bg {
@@ -479,13 +596,13 @@ header {
 
 /* CONTACTO MODERNO Y RESPONSIVE */
 .contacto-section {
-  background: linear-gradient(120deg, #232323 80%, #181818 100%);
+  background: linear-gradient(120deg, var(--color-contact-bg) 80%, var(--color-contact-gradient) 100%);
   border-radius: 18px;
-  box-shadow: 0 4px 24px #0005, 0 1.5px 8px #ffc10722;
+  box-shadow: 0 4px 24px var(--color-contact-shadow), 0 1.5px 8px var(--color-contact-shadow-yellow);
   margin: 2.2rem auto 1.5rem auto;
   padding: 2.2rem 1.5rem 1.7rem 1.5rem;
   max-width: 430px;
-  color: #fff;
+  color: var(--color-contact-text);
   position: relative;
   overflow: hidden;
   text-align: center;
@@ -494,11 +611,11 @@ header {
   gap: 1.2rem;
 }
 .contacto-section h2 {
-  color: #ffc107;
+  color: var(--color-contact-title);
   font-size: 2rem;
   margin-bottom: 0.7rem;
   letter-spacing: 1px;
-  text-shadow: 0 2px 8px #0008;
+  text-shadow: 0 2px 8px var(--color-contact-title-shadow);
 }
 .contacto-section .contacto-info {
   display: flex;
@@ -512,14 +629,14 @@ header {
   align-items: center;
   gap: 0.5rem;
   font-size: 1.08rem;
-  color: #ffc107;
-  background: #181818cc;
+  color: var(--color-contact-label);
+  background: var(--color-contact-box);
   border-radius: 8px;
   padding: 0.5rem 1rem;
-  box-shadow: 0 1px 6px #0002;
+  box-shadow: 0 1px 6px var(--color-contact-box-shadow);
 }
 .contacto-section .dato span {
-  color: #fff;
+  color: var(--color-contact-text);
   font-weight: 400;
   font-size: 1.01rem;
 }
@@ -531,41 +648,24 @@ header {
   margin-bottom: 0.2rem;
   flex-wrap: wrap;
 }
-.btn-maps {
+.btn-contactar {
   display: inline-block;
-  padding: 0.6rem 1.2rem;
-  border-radius: 8px;
-  font-size: 1.08rem;
-  font-weight: 500;
+  padding: 0.8rem 2.1rem;
+  font-size: 1.18rem;
+  font-weight: 600;
+  color: var(--color-contact-btn-contactar-text);
+  background: var(--color-contact-btn-contactar-bg);
+  border-radius: 10px;
   text-decoration: none;
-  color: #232323;
-  background: #ffc107;
-  box-shadow: 0 2px 8px #0003;
+  box-shadow: 0 2px 12px var(--color-contact-btn-contactar-shadow, #ffc107), 0 1px 6px var(--color-contact-btn-contactar-shadow2, #ffc10755);
+  margin: 0.5rem auto 0 auto;
   transition: background 0.18s, color 0.18s, box-shadow 0.18s;
-  margin-bottom: 0.2rem;
+  cursor: pointer;
 }
-.btn-maps:hover, .btn-maps:focus {
-  background: #ffb300;
-  color: #232323;
-  box-shadow: 0 4px 16px #ffc10755;
-}
-.btn-whatsapp {
-  display: inline-block;
-  padding: 0.6rem 1.2rem;
-  border-radius: 8px;
-  font-size: 1.08rem;
-  font-weight: 500;
-  text-decoration: none;
-  color: #fff;
-  background: #25d366;
-  box-shadow: 0 2px 8px #0003;
-  transition: background 0.18s, color 0.18s, box-shadow 0.18s;
-  margin-bottom: 0.2rem;
-}
-.btn-whatsapp:hover, .btn-whatsapp:focus {
-  background: #1ebe5d;
-  color: #fff;
-  box-shadow: 0 4px 16px #25d36655;
+.btn-contactar:hover, .btn-contactar:focus {
+  background: var(--color-contact-btn-contactar-hover-bg);
+  color: var(--color-contact-btn-contactar-hover-text);
+  box-shadow: 0 4px 18px var(--color-contact-btn-contactar-hover-shadow, #ffc107aa);
 }
 @media (max-width: 600px) {
   .contacto-section {
@@ -610,13 +710,13 @@ header {
   grid-template-columns: 1.1fr 1fr;
   gap: 2.2rem;
   align-items: stretch;
-  background: linear-gradient(120deg, #232323 80%, #181818 100%);
+  background: linear-gradient(120deg, var(--color-contact-bg) 80%, var(--color-contact-gradient) 100%);
   border-radius: 18px;
-  box-shadow: 0 4px 24px #0005, 0 1.5px 8px #ffc10722;
+  box-shadow: 0 4px 24px var(--color-contact-shadow), 0 1.5px 8px var(--color-contact-shadow-yellow);
   margin: 2.2rem auto 1.5rem auto;
   padding: 2.2rem 2.2rem 1.7rem 2.2rem;
   max-width: 700px;
-  color: #fff;
+  color: var(--color-contact-text);
   position: relative;
   overflow: hidden;
   min-height: 270px;
@@ -628,11 +728,11 @@ header {
   gap: 1.1rem;
 }
 .contacto-section.contacto-grid h2 {
-  color: #ffc107;
+  color: var(--color-contact-title);
   font-size: 2rem;
   margin-bottom: 0.7rem;
   letter-spacing: 1px;
-  text-shadow: 0 2px 8px #0008;
+  text-shadow: 0 2px 8px var(--color-contact-title-shadow);
 }
 .contacto-section.contacto-grid .contacto-info {
   display: flex;
@@ -645,14 +745,14 @@ header {
   align-items: center;
   gap: 0.7rem;
   font-size: 1.08rem;
-  color: #ffc107;
-  background: #181818cc;
+  color: var(--color-contact-label);
+  background: var(--color-contact-box);
   border-radius: 8px;
   padding: 0.5rem 1rem;
-  box-shadow: 0 1px 6px #0002;
+  box-shadow: 0 1px 6px var(--color-contact-box-shadow);
 }
 .contacto-section.contacto-grid .dato span {
-  color: #fff;
+  color: var(--color-contact-text);
   font-weight: 400;
   font-size: 1.01rem;
 }
@@ -671,32 +771,12 @@ header {
   margin-bottom: 0.2rem;
   flex-wrap: wrap;
 }
-.contacto-section.contacto-grid .btn-maps,
-.contacto-section.contacto-grid .btn-whatsapp {
-  display: inline-block;
-  padding: 0.7rem 1.5rem;
-  border-radius: 10px;
-  font-size: 1.13rem;
-  font-weight: 600;
-  text-decoration: none;
-  box-shadow: 0 2px 8px #0003;
-  transition: background 0.18s, color 0.18s, box-shadow 0.18s;
-  margin-bottom: 0.2rem;
-}
-.contacto-section.contacto-grid .btn-maps {
-  color: #232323;
-  background: #ffc107;
-}
-.contacto-section.contacto-grid .btn-maps:hover, .contacto-section.contacto-grid .btn-maps:focus {
-  background: #ffb300;
-  color: #232323;
-  box-shadow: 0 4px 16px #ffc10755;
-}
-.contacto-section.contacto-grid .btn-whatsapp {
+
+.contacto-section.contacto-grid {
   background: #25d366;
   color: #fff;
 }
-.contacto-section.contacto-grid .btn-whatsapp:hover, .contacto-section.contacto-grid .btn-whatsapp:focus {
+.contacto-section.contacto-grid, .contacto-section.contacto-grid {
   background: #1ebe5d;
   color: #fff;
   box-shadow: 0 4px 16px #25d36655;
@@ -756,8 +836,8 @@ header {
   .contacto-section.contacto-grid .contacto-botones {
     gap: 0.7rem;
   }
-  .contacto-section.contacto-grid .btn-maps,
-  .contacto-section.contacto-grid .btn-whatsapp {
+  .contacto-section.contacto-grid,
+  .contacto-section.contacto-grid {
     font-size: 1.01rem;
     padding: 0.6rem 1.1rem;
     border-radius: 7px;
@@ -773,13 +853,13 @@ header {
 
 /* CONTACTO SIMPLE Y MODERNO CON DETALLES DESPLEGABLES Y EFECTOS */
 .contacto-section.contacto-simple {
-  background: linear-gradient(120deg, #232323 80%, #181818 100%);
+  background: linear-gradient(120deg, var(--color-contact-bg) 80%, var(--color-contact-gradient) 100%);
   border-radius: 18px;
-  box-shadow: 0 4px 24px #0005, 0 1.5px 8px #ffc10722;
+  box-shadow: 0 4px 24px var(--color-contact-shadow), 0 1.5px 8px var(--color-contact-shadow-yellow);
   margin: 2.2rem auto 1.5rem auto;
   padding: 2.2rem 1.5rem 1.7rem 1.5rem;
   max-width: 400px;
-  color: #fff;
+  color: var(--color-contact-text);
   position: relative;
   overflow: hidden;
   text-align: center;
@@ -801,22 +881,22 @@ header {
   width: 100px;
   height: 100px;
   border-radius: 16px;
-  background: #fff;
-  box-shadow: 0 2px 12px #0003;
+  background: var(--color-logo-bg);
+  box-shadow: 0 2px 12px var(--color-logo-shadow);
   object-fit: contain;
   margin-bottom: 0.2rem;
-  transition: transform 0.3s cubic-bezier(.4,1.3,.5,1);
+  transition: transform 0.3s cubic-bezier(.4,1.3,.5,1), box-shadow 0.3s cubic-bezier(.4,1.3,.5,1);
 }
 .contacto-section.contacto-simple .contacto-logo:hover {
   transform: scale(1.08) rotate(-6deg);
-  box-shadow: 0 4px 24px #ffc10755;
+  box-shadow: 0 4px 24px var(--color-logo-shadow-anim, #ffc10755);
 }
 .contacto-section.contacto-simple .contacto-nombre {
-  color: #ffc107;
+  color: var(--color-contact-title);
   font-size: 2.1rem;
   margin: 0;
   letter-spacing: 1px;
-  text-shadow: 0 2px 8px #0008;
+  text-shadow: 0 2px 8px var(--color-contact-title-shadow);
   font-weight: bold;
   transition: color 0.18s;
 }
@@ -1091,20 +1171,19 @@ header {
   padding: 0.8rem 2.1rem;
   font-size: 1.18rem;
   font-weight: 600;
-  color: #232323;
-  background: #ffc107;
+  color: var(--color-contact-btn-contactar-text);
+  background: var(--color-contact-btn-contactar-bg);
   border-radius: 10px;
   text-decoration: none;
-  box-shadow: 0 2px 12px #ffc10755, 0 1px 6px #0002;
+  box-shadow: 0 2px 12px var(--color-contact-btn-contactar-shadow, #ffc107), 0 1px 6px var(--color-contact-btn-contactar-shadow2, #ffc10755);
   margin: 0.5rem auto 0 auto;
   transition: background 0.18s, color 0.18s, box-shadow 0.18s;
   cursor: pointer;
 }
 .btn-contactar:hover, .btn-contactar:focus {
-  background: #ffb300;
-  color: #232323;
-  box-shadow: 0 4px 18px #ffc10788;
-  text-decoration: none;
+  background: var(--color-contact-btn-contactar-hover-bg);
+  color: var(--color-contact-btn-contactar-hover-text);
+  box-shadow: 0 4px 18px var(--color-contact-btn-contactar-hover-shadow, #ffc107aa);
 }
 @media (max-width: 600px) {
   .btn-contactar {
@@ -1157,24 +1236,20 @@ body, html {
 /* Estilos para el footer */
 .footer-bar {
   width: 100vw;
-  background: #232323;
-  color: #ffc107;
+  background: var(--color-footer-bg);
+  color: var(--color-footer-text);
+  border-top: 2px solid var(--color-footer-border);
   text-align: center;
   padding: 1.1rem 0 1.1rem 0;
   font-size: 1.08rem;
   letter-spacing: 0.5px;
-  border-top: 2px solid #ffc10722;
   margin-top: 2.5rem;
 }
 .footer-link {
-  color: #ffc107;
-  text-decoration: underline;
-  font-weight: bold;
-  transition: color 0.18s;
+  color: var(--color-footer-link);
 }
 .footer-link:hover, .footer-link:focus {
-  color: #fffbe7;
-  text-decoration: underline;
+  color: var(--color-footer-link-hover);
 }
 @media (max-width: 600px) {
   .footer-bar {
@@ -1182,4 +1257,9 @@ body, html {
     padding: 0.7rem 0 0.7rem 0;
     margin-top: 1.2rem;
   }
+}
+
+/* Efectos */
+.efecto-amarillo, .some-yellow-effect-class {
+  color: var(--color-efecto-amarillo);
 }

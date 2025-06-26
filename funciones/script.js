@@ -1,4 +1,3 @@
-// Cargar categorías y productos desde menus/menu.json y generar el navegador automáticamente
 function cargarMenuYNavDesdeJSON() {
   fetch('datos/menu.json')
     .then(response => response.json())
@@ -20,7 +19,7 @@ function generarNavegadorCategorias(data) {
     const li = document.createElement('li');
     li.textContent = cat.categoria;
     if (idx === 0) li.classList.add('active');
-    li.addEventListener('click', function() {
+    li.addEventListener('click', function () {
       document.querySelectorAll('.nav-list li').forEach(el => el.classList.remove('active'));
       this.classList.add('active');
       mostrarProductosPorCategoria(cat.categoria);
@@ -56,7 +55,31 @@ function cargarInfoBar(callback) {
     });
 }
 
-// Modificar renderContactoSection para usar infoBar
+function inicializarInfoBar() {
+  fetch('datos/info-bar.json')
+    .then(r => r.json())
+    .then(info => {
+      if (document.getElementById('bar-nombre'))
+        document.getElementById('bar-nombre').textContent = info.nombreBar || '';
+      if (document.getElementById('bar-direccion'))
+        document.getElementById('bar-direccion').textContent = info.direccion || '';
+      if (document.getElementById('logo-img')) {
+        document.getElementById('logo-img').src = info.logo || 'imagenes/logo-bar.png';
+        document.getElementById('logo-img').alt = 'Logo ' + (info.nombreBar || '');
+      }
+      if (document.getElementById('banner-img')) {
+        document.getElementById('banner-img').src = info.banner || 'imagenes/banner-bar.jpg';
+        document.getElementById('banner-img').alt = 'Banner ' + (info.nombreBar || '');
+      }
+      if (info.colores) {
+        const root = document.documentElement;
+        Object.entries(info.colores).forEach(([key, value]) => {
+          root.style.setProperty(`--${key}`, value);
+        });
+      }
+    });
+}
+
 function renderContactoSection() {
   const info = window.infoBar || {};
   const menuContainer = document.getElementById('menu-container');
@@ -77,7 +100,6 @@ function renderContactoSection() {
   `;
 }
 
-// Modificar mostrarProductosPorCategoria para mostrar contacto especial
 function mostrarProductosPorCategoria(categoria) {
   if (categoria.toLowerCase() === 'contacto') {
     renderContactoSection();
@@ -110,16 +132,16 @@ function mostrarProductosPorCategoria(categoria) {
 }
 
 window.addEventListener('DOMContentLoaded', () => {
+  inicializarInfoBar();
   cargarInfoBar(() => {
     cargarMenuYNavDesdeJSON();
   });
 });
 
-// Enviar formulario de contacto (simulado)
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
   const form = document.querySelector('.contacto-form');
-  if(form) {
-    form.addEventListener('submit', function(e) {
+  if (form) {
+    form.addEventListener('submit', function (e) {
       e.preventDefault();
       form.reset();
       alert('¡Gracias por tu mensaje! Nos pondremos en contacto pronto.');
@@ -127,7 +149,6 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 });
 
-// Sticky header reducido al hacer scroll
 const topBanner = document.querySelector('.top-banner-mix');
 const navWrapper = document.querySelector('.nav-scroll-wrapper');
 const barTitle = document.querySelector('.bar-title');

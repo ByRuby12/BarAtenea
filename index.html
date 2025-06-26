@@ -4,8 +4,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Bar Atenea - Tu lugar para disfrutar de deliciosos desayunos, raciones, hamburguesas, bocadillos y más.">
-  <meta name="keywords" content="Bar Atenea, desayunos, raciones, hamburguesas, bocadillos, bebidas, postres, promociones, contacto">
+  <meta name="description"
+    content="Bar Atenea - Tu lugar para disfrutar de deliciosos desayunos, raciones, hamburguesas, bocadillos y más.">
+  <meta name="keywords"
+    content="Bar Atenea, desayunos, raciones, hamburguesas, bocadillos, bebidas, postres, promociones, contacto">
   <meta name="author" content="Bar Atenea">
   <link rel="icon" href="imagenes/logo-bar.png" type="image/x-icon">
   <title>Bar Atenea</title>
@@ -13,34 +15,34 @@
 </head>
 
 <body>
-    <div class="top-banner-mix">
-      <div class="banner-bg">
-        <img id="banner-img" src="imagenes/banner-bar.jpg" alt="Banner Bar Atenea">
-        <div class="banner-overlay"></div>
+  <div class="top-banner-mix">
+    <div class="banner-bg">
+      <img id="banner-img" src="imagenes/banner-bar.jpg" alt="Banner Bar Atenea">
+      <div class="banner-overlay"></div>
+    </div>
+    <div class="top-header-content">
+      <div class="logo-container">
+        <img id="logo-img" src="imagenes/logo-bar.png" alt="Logo Bar Atenea">
       </div>
-      <div class="top-header-content">
-        <div class="logo-container">
-          <img id="logo-img" src="imagenes/logo-bar.png" alt="Logo Bar Atenea">
-        </div>
-        <div class="bar-title">
-          <h1 id="bar-nombre"> </h1>
-          <p class="bar-address" id="bar-direccion"> </p>
-        </div>
+      <div class="bar-title">
+        <h1 id="bar-nombre"> </h1>
+        <p class="bar-address" id="bar-direccion"> </p>
       </div>
     </div>
-    <nav class="nav-scroll-wrapper">
-      <ul class="nav-list">
-        <li data-category="desayunos">Desayunos<span class="indicator"></span></li>
-        <li data-category="raciones">Raciones<span class="indicator"></span></li>
-        <li data-category="hamburguesas">Hamburguesas<span class="indicator"></span></li>
-        <li data-category="sandwich">Sandwich<span class="indicator"></span></li>
-        <li data-category="bebidas">Bebidas<span class="indicator"></span></li>
-        <li data-category="bocadillos">Bocadillos<span class="indicator"></span></li>
-        <li data-category="postres">Postres<span class="indicator"></span></li>
-        <li data-category="promociones">Promociones<span class="indicator"></span></li>
-        <li data-category="contacto">Contacto<span class="indicator"></span></li>
-      </ul>
-    </nav>
+  </div>
+  <nav class="nav-scroll-wrapper">
+    <ul class="nav-list">
+      <li data-category="desayunos">Desayunos<span class="indicator"></span></li>
+      <li data-category="raciones">Raciones<span class="indicator"></span></li>
+      <li data-category="hamburguesas">Hamburguesas<span class="indicator"></span></li>
+      <li data-category="sandwich">Sandwich<span class="indicator"></span></li>
+      <li data-category="bebidas">Bebidas<span class="indicator"></span></li>
+      <li data-category="bocadillos">Bocadillos<span class="indicator"></span></li>
+      <li data-category="postres">Postres<span class="indicator"></span></li>
+      <li data-category="promociones">Promociones<span class="indicator"></span></li>
+      <li data-category="contacto">Contacto<span class="indicator"></span></li>
+    </ul>
+  </nav>
 
   <main id="menu-container">
 
@@ -48,32 +50,12 @@
 
   <footer>
     <div class="footer-bar">
-      Realizada por <a href="https://github.com/ByRuby12" target="_blank" rel="noopener" class="footer-link">ByRuby12</a>
+      Realizada por <a href="https://github.com/ByRuby12" target="_blank" rel="noopener"
+        class="footer-link">ByRuby12</a>
     </div>
   </footer>
 
   <script src="funciones/script.js"></script>
-  <script>
-    // Al cargar info-bar.json, actualizar nombre, dirección, logo y banner
-    document.addEventListener('DOMContentLoaded', function() {
-      fetch('datos/info-bar.json')
-        .then(r => r.json())
-        .then(info => {
-          if(document.getElementById('bar-nombre'))
-            document.getElementById('bar-nombre').textContent = info.nombreBar || '';
-          if(document.getElementById('bar-direccion'))
-            document.getElementById('bar-direccion').textContent = info.direccion || '';
-          if(document.getElementById('logo-img'))
-            document.getElementById('logo-img').src = info.logo || 'imagenes/logo-bar.png';
-          if(document.getElementById('logo-img'))
-            document.getElementById('logo-img').alt = 'Logo ' + (info.nombreBar || '');
-          if(document.getElementById('banner-img'))
-            document.getElementById('banner-img').src = info.banner || 'imagenes/banner-bar.jpg';
-          if(document.getElementById('banner-img'))
-            document.getElementById('banner-img').alt = 'Banner ' + (info.nombreBar || '');
-        });
-    });
-  </script>
 </body>
 
 </html>

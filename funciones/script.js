@@ -55,10 +55,14 @@ function cargarInfoBar(callback) {
     });
 }
 
-function inicializarInfoBar() {
+function inicializarInfoBarYMeta() {
   fetch('datos/info-bar.json')
     .then(r => r.json())
     .then(info => {
+      // Inicializar infoBar global
+      window.infoBar = info;
+
+      // Actualizar elementos visuales
       if (document.getElementById('bar-nombre'))
         document.getElementById('bar-nombre').textContent = info.nombreBar || '';
       if (document.getElementById('bar-direccion'))
@@ -77,6 +81,17 @@ function inicializarInfoBar() {
           root.style.setProperty(`--${key}`, value);
         });
       }
+
+      // Actualizar meta y title
+      document.title = info.nombreBar || '';
+      const metaTitle = document.getElementById('meta-title');
+      if (metaTitle) metaTitle.textContent = info.nombreBar || '';
+      const metaDesc = document.getElementById('meta-description');
+      if (metaDesc) metaDesc.setAttribute('content', info.descripcion || '');
+      const metaKeywords = document.getElementById('meta-keywords');
+      if (metaKeywords) metaKeywords.setAttribute('content', info.keywords || '');
+      const metaAuthor = document.getElementById('meta-author');
+      if (metaAuthor) metaAuthor.setAttribute('content', info.nombreBar || '');
     });
 }
 
@@ -92,7 +107,8 @@ function renderContactoSection() {
       <div class="contacto-datos-simples" style="margin-top:1.2rem;">
         <div>📍 ${info.direccion || ''}</div>
         <div>⏰ ${info.horario || ''}</div>
-        <div style="margin-top:1.2rem; text-align:center;">
+        <div class="enlace-google-maps">
+          <a href="${info.enlaceGoogleMaps || ''}" class="btn-reseña-google">⭐ Calificanos ahora</a> <br>
           <a href="tel:${info.telefono || ''}" class="btn-contactar">📞 Contactar ahora</a>
         </div>
       </div>
@@ -132,7 +148,7 @@ function mostrarProductosPorCategoria(categoria) {
 }
 
 window.addEventListener('DOMContentLoaded', () => {
-  inicializarInfoBar();
+  inicializarInfoBarYMeta();
   cargarInfoBar(() => {
     cargarMenuYNavDesdeJSON();
   });
@@ -196,3 +212,7 @@ window.addEventListener('scroll', () => {
     mostrarStickyHeader(false);
   }
 });
+
+console.log('¡Gracias por visitar Bar Atenea! Disfruta de nuestra comida y bebidas.');
+console.log('Página Web realizada por: ByRuby12 - https://github.com/ByRuby12 ');
+console.log('Contactame por email: byruby12.contacto@gmail.com');

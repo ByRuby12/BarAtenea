@@ -4,9 +4,11 @@
   "telefono": "918791714",
   "email": "info@baratenea.com",
   "horario": "Lunes a Domingos: 7:00 - 00:00",
-  "ciudad": "Madrid",
+  "enlaceGoogleMaps": "https://www.google.com/search?hl=es-ES&gl=es&q=Bar+L%C3%ADnea+123,+Av.+de+Orovilla,+46,+Villaverde,+28041+Madrid&ludocid=6486868406980179656&lsig=AB86z5UbP4IjfDV7Cc5-2bASxtFX#lrd=0xd422791d571e8d1:0x5a05fc727ec1f6c8,3",
   "logo": "imagenes/logo-bar.png",
   "banner": "imagenes/banner-bar.jpg",
+  "descripcion": "Bar Atenea - Tu lugar para disfrutar de deliciosos desayunos, raciones, hamburguesas, bocadillos y más.",
+  "keywords": "Bar Atenea, desayunos, raciones, hamburguesas, bocadillos, bebidas, postres, promociones, contacto",
   "colores": {
     "color-header-bg": "#1e1e1e",
     "color-header-border": "#2a2a2a",
@@ -76,7 +78,6 @@
     "color-contact-btn-contactar-text": "#232323",
     "color-contact-btn-contactar-hover-bg": "#FFB300",
     "color-contact-btn-contactar-hover-text": "#232323",
-
     "color-contact-btn-contactar-shadow": "#ffc107",
     "color-contact-btn-contactar-shadow2": "#ffc10755",
     "color-contact-btn-contactar-hover-shadow": "#ffc107aa",
@@ -93,6 +94,16 @@
 
     "color-product-title": "#ffc107",
     "color-product-title-hover": "#ffc107",
-    "color-product-card-border-hover": "#ffb300"
+    "color-product-card-border-hover": "#ffb300",
+
+    "color-btn-reseña-bg": "#ffc107",
+    "color-btn-reseña-text": "#232323",
+    "color-btn-reseña-hover-bg": "#ffb300",
+    "color-btn-reseña-hover-text": "#232323",
+    "color-btn-reseña-border": "#FFD600",
+    "color-btn-reseña-hover-border": "#FFB300",
+    "color-btn-reseña-shadow": "#ffc107",
+    "color-btn-reseña-shadow2": "#ffc10755",
+    "color-btn-reseña-hover-shadow": "#ffc107aa"
   }
 }

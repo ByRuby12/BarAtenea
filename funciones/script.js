@@ -175,6 +175,16 @@ function inicializarWeb() {
         });
       }
 
+      if (info.iconoFavicon) {
+        let favicon = document.querySelector("link[rel~='icon']");
+        if (!favicon) {
+          favicon = document.createElement('link');
+          favicon.rel = 'icon';
+          document.head.appendChild(favicon);
+        }
+        favicon.href = info.iconoFavicon;
+      }
+
       // Actualizar meta y title
       document.title = info.nombreBar || '';
       const metaTitle = document.getElementById('meta-title');

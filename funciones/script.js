@@ -187,11 +187,14 @@ function crearStickyHeader() {
     </nav>
   `;
   document.body.appendChild(stickyHeader);
-  // Copiar categorías actuales
+}
+
+function actualizarStickyNav() {
+  if (!stickyHeader) return;
   const navList = stickyHeader.querySelector('.nav-list');
+  navList.innerHTML = '';
   document.querySelectorAll('.nav-list li').forEach(li => {
     const clone = li.cloneNode(true);
-    clone.classList.remove('active');
     if (li.classList.contains('active')) clone.classList.add('active');
     clone.addEventListener('click', () => li.click());
     navList.appendChild(clone);
@@ -207,11 +210,57 @@ window.addEventListener('scroll', () => {
   const trigger = (topBanner.offsetHeight || 120) - 30;
   if (window.scrollY > trigger) {
     crearStickyHeader();
+    actualizarStickyNav();
     mostrarStickyHeader(true);
   } else {
     mostrarStickyHeader(false);
   }
 });
+
+// Actualizar sticky nav al cambiar categorías
+document.addEventListener('click', function (e) {
+  if (e.target.closest('.nav-list li')) {
+    setTimeout(actualizarStickyNav, 0);
+  }
+});
+
+// Footer: logo, enlaces y derechos reservados desde info-bar.json
+fetch('datos/info-bar.json')
+  .then(res => res.json())
+  .then(data => {
+    // Logo
+    const logoFooter = document.getElementById('footer-logo');
+    if (logoFooter) {
+      logoFooter.src = data.logoFooter || data.logo || 'imagenes/logo-bar.png';
+      logoFooter.alt = data.nombreBar || 'Logo Bar';
+    }
+
+    // Redes sociales (solo enlaces)
+    const redes = data.redes || {};
+    if (document.getElementById('footer-twitter')) {
+      document.getElementById('footer-twitter').href = redes.twitter || "#";
+    }
+    if (document.getElementById('footer-tiktok')) {
+      document.getElementById('footer-tiktok').href = redes.tiktok || "#";
+    }
+    if (document.getElementById('footer-youtube')) {
+      document.getElementById('footer-youtube').href = redes.youtube || "#";
+    }
+    if (document.getElementById('footer-instagram')) {
+      document.getElementById('footer-instagram').href = redes.instagram || "#";
+    }
+
+    // Derechos reservados desde info-bar.json
+    const year = new Date().getFullYear();
+    const derechos = document.getElementById('footer-derechos');
+    if (derechos) {
+      if (data.footerDerechos) {
+        derechos.textContent = data.footerDerechos.replace('{year}', year).replace('{bar}', data.nombreBar || 'Bar Atenea');
+      } else {
+        derechos.textContent = `© ${year} ${data.nombreBar || 'Bar Atenea'}. Todos los derechos reservados.`;
+      }
+    }
+  });
 
 console.log('¡Gracias por visitar Bar Atenea! Disfruta de nuestra comida y bebidas.');
 console.log('Página Web realizada por: ByRuby12 - https://github.com/ByRuby12 ');

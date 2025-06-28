@@ -1,11 +1,9 @@
-/* =========================
-   VARIABLES CSS (rellenadas por info-bar.json)
-   ========================= */
 :root {
   /* ====== Colores generales de la web ====== */
   --color-header-bg: #1e1e1e;
   --color-header-border: #2a2a2a;
   --color-logo-bg: #fff;
+  --color-logo-shadow-anim: #ffc10755;
   --color-logo-shadow: #0003;
   --color-logo: #FFD600;
 
@@ -24,7 +22,6 @@
   /* ====== Navegación ====== */
   --color-nav-bg: #232323;
   --color-nav-shadow: #0002;
-  --color-nav-border: #ffc10722;
   --color-nav-border-bottom: #ffbf00;
   --color-nav-border: #ffc107;
   --color-nav-scrollbar-thumb: #ffc107;
@@ -78,14 +75,6 @@
   --color-contact-btn-contactar-shadow2: #ffc10755;
   --color-contact-btn-contactar-hover-shadow: #ffc107aa;
 
-  /* ====== Footer ====== */
-  --color-footer-bg: #232323;
-  --color-footer-text: #FFD600;
-  --color-footer-link: #FFD600;
-  --color-footer-link-hover: #fffbe7;
-  --color-footer-border: #ffc107;
-  --color-logo-shadow-anim: #ffc10755;
-
   /* ====== Efectos generales ====== */
   --color-efecto-amarillo: #FFD600;
   --color-yellow-effect: #FFD600;
@@ -105,6 +94,28 @@
   --color-btn-reseña-shadow: #ffc107;
   --color-btn-reseña-shadow2: #ffc10755;
   --color-btn-reseña-hover-shadow: #ffc107aa;
+
+  /* ====== Footer Moderno Redes Sociales ====== */
+  --footer-bg: #18191a;
+  --footer-main-border: #ffbf00;
+  --footer-text: #ffe066;
+  --footer-divider: #ffbf00;
+  --footer-social-bg: #232323;
+  --footer-social-icon-bg: #232323;
+  --footer-social-icon-color: #ffd600;
+  --footer-social-icon-hover-bg: #ffd600;
+  --footer-social-icon-hover-color: #232323;
+  --footer-social-icon-shadow: #ffd60044;
+  --footer-social-border: #ffd600;
+  --footer-social-divider: #ffd60055;
+  --footer-link: #ffd600;
+  --footer-link-hover: #fffbe7;
+  --footer-copyright: #ffe066;
+  --footer-shadow: #ffd60033;
+  --footer-social-focus: #fffbe7;
+  --footer-social-row-bg: transparent;
+  --footer-social-icon-filter: #ffd60055;
+  --footer-social-icon-filter-hover: #ffd60088;
 }
 
 /* =========================
@@ -1211,32 +1222,161 @@ body, html {
 }
 
 /* Estilos para el footer */
-.footer-bar {
-  width: 100vw;
-  background: var(--color-footer-bg);
-  color: var(--color-footer-text);
-  border-top: 2px solid var(--color-footer-border);
-  text-align: center;
-  padding: 1.1rem 0 1.1rem 0;
-  font-size: 1.08rem;
-  letter-spacing: 0.5px;
-  margin-top: 2.5rem;
-}
-.footer-link {
-  color: var(--color-footer-link);
-}
-.footer-link:hover, .footer-link:focus {
-  color: var(--color-footer-link-hover);
-}
-@media (max-width: 600px) {
-  .footer-bar {
-    font-size: 0.98rem;
-    padding: 0.7rem 0 0.7rem 0;
-    margin-top: 1.2rem;
-  }
+.footer-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: var(--footer-bg);
+  box-sizing: border-box;
+  border-top: 2px solid var(--footer-main-border);
+  border-bottom: 2px solid var(--footer-main-border);
 }
 
-/* Efectos */
-.efecto-amarillo, .some-yellow-effect-class {
-  color: var(--color-efecto-amarillo);
+.footer-social-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  background: var(--footer-social-row-bg);
+  padding: 2rem 0 1rem 0;
+  gap: 2.5rem;
+}
+
+.footer-social-icons {
+  display: flex;
+  flex-direction: row;
+  gap: 2.2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--footer-social-icon-bg);
+  border-radius: 50%;
+  width: 4.2rem;
+  height: 4.2rem;
+  min-width: 4.2rem;
+  min-height: 4.2rem;
+  box-shadow: 0 2px 16px var(--footer-social-icon-shadow);
+  border: 2.5px solid var(--footer-social-border);
+  transition: 
+    background 0.22s cubic-bezier(.4,1.3,.5,1),
+    color 0.22s cubic-bezier(.4,1.3,.5,1),
+    box-shadow 0.22s cubic-bezier(.4,1.3,.5,1),
+    border 0.22s cubic-bezier(.4,1.3,.5,1),
+    transform 0.22s cubic-bezier(.4,1.3,.5,1);
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+.footer-social-link:focus, .footer-social-link:active {
+  outline: none;
+  border-color: var(--footer-social-focus);
+  box-shadow: 0 0 0 4px var(--footer-social-focus), 0 4px 18px var(--footer-social-icon-shadow);
+}
+.footer-social-link:hover {
+  background: var(--footer-social-icon-hover-bg);
+  border-color: var(--footer-social-border);
+  box-shadow: 0 6px 24px var(--footer-social-icon-shadow);
+  transform: translateY(-6px) scale(1.12) rotate(-4deg);
+}
+.footer-social-icon {
+  width: 2.3rem;
+  height: 2.3rem;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  filter: drop-shadow(0 2px 8px var(--footer-social-icon-filter));
+  transition: filter 0.22s cubic-bezier(.4,1.3,.5,1), transform 0.22s cubic-bezier(.4,1.3,.5,1);
+}
+.footer-social-link:hover .footer-social-icon,
+.footer-social-link:focus .footer-social-icon {
+  filter: drop-shadow(0 4px 16px var(--footer-social-icon-filter-hover)) brightness(1.15) saturate(1.2);
+  transform: scale(1.12) rotate(-6deg);
+}
+
+.footer-divider {
+  width: 70vw;
+  max-width: 420px;
+  height: 3px;
+  background: var(--color-efecto-amarillo);
+  margin: 1.2rem auto 1.2rem auto;
+  border-radius: 2px;
+}
+
+.footer-derechos {
+  margin-top: 0.5rem;
+  color: var(--footer-copyright);
+  font-size: 1.08rem;
+  letter-spacing: 0.5px;
+  text-align: center;
+  padding-bottom: 0.7rem;
+}
+
+.footer-link {
+  color: var(--footer-link);
+  transition: color 0.18s;
+}
+.footer-link:hover, .footer-link:focus {
+  color: var(--footer-link-hover);
+}
+
+/* Responsive Footer Redes Sociales */
+@media (max-width: 900px) {
+  .footer-social-row {
+    gap: 1.2rem;
+    padding: 1.2rem 0 0.7rem 0;
+  }
+  .footer-social-icons {
+    gap: 1.1rem;
+  }
+  .footer-social-link {
+    width: 3.2rem;
+    height: 3.2rem;
+    min-width: 3.2rem;
+    min-height: 3.2rem;
+  }
+  .footer-social-icon {
+    width: 1.7rem;
+    height: 1.7rem;
+  }
+  .footer-divider {
+    width: 90vw;
+    max-width: 220px;
+    margin: 0.7rem auto 0.7rem auto;
+  }
+}
+@media (max-width: 600px) {
+  .footer-main {
+   padding: 5px 0px 0px 0px;
+  }
+  .footer-social-row {
+    gap: 0.7rem;
+    padding: 15px 0 0.2rem 0;
+  }
+  .footer-social-icons {
+    gap: 0.5rem;
+  }
+  .footer-social-link {
+    width: 4.5rem;
+    height: 4.5rem;
+    min-width: 4.5rem;
+    min-height: 4.5rem;
+    border-width: 2px;
+  }
+  .footer-social-icon {
+    width: 2.7rem;
+    height: 2.7rem;
+  }
+  .footer-divider {
+    width: 98vw;
+    max-width: 167px;
+    margin: 15px auto 0.3rem auto;
+  }
+  .footer-derechos {
+    font-size: 12px;
+  }
 }

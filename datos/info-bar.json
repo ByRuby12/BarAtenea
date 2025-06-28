@@ -10,6 +10,7 @@
   "descripcion": "Bar Atenea - Tu lugar para disfrutar de deliciosos desayunos, raciones, hamburguesas, bocadillos y más.",
   "keywords": "Bar Atenea, desayunos, raciones, hamburguesas, bocadillos, bebidas, postres, promociones, contacto",
   "logoFooter": "imagenes/logo-bar.png",
+  "iconoFavicon": "imagenes/logo-bar.png",
   "footerDerechos": "Copyright ©{year} Derechos reservados para {bar}",
   "redes": {
     "twitter": "https://twitter.com/baratenea",

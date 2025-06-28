@@ -68,11 +68,11 @@ function inicializarInfoBarYMeta() {
       if (document.getElementById('bar-direccion'))
         document.getElementById('bar-direccion').textContent = info.direccion || '';
       if (document.getElementById('logo-img')) {
-        document.getElementById('logo-img').src = info.logo || 'imagenes/logo-bar.png';
+        document.getElementById('logo-img').src = info.logo || '';
         document.getElementById('logo-img').alt = 'Logo ' + (info.nombreBar || '');
       }
       if (document.getElementById('banner-img')) {
-        document.getElementById('banner-img').src = info.banner || 'imagenes/banner-bar.jpg';
+        document.getElementById('banner-img').src = info.banner || '';
         document.getElementById('banner-img').alt = 'Banner ' + (info.nombreBar || '');
       }
       if (info.colores) {
@@ -107,9 +107,10 @@ function renderContactoSection() {
       <div class="contacto-datos-simples" style="margin-top:1.2rem;">
         <div>📍 ${info.direccion || ''}</div>
         <div>⏰ ${info.horario || ''}</div>
+        <div>📧 ${info.email || ''}</div>
         <div class="enlace-google-maps">
-          <a href="${info.enlaceGoogleMaps || ''}" class="btn-reseña-google">⭐ Calificanos ahora</a> <br>
-          <a href="tel:${info.telefono || ''}" class="btn-contactar">📞 Contactar ahora</a>
+          ${info.enlaceGoogleMaps ? `<a href="${info.enlaceGoogleMaps}" class="btn-reseña-google" target="_blank" rel="noopener">⭐ Calificanos ahora</a><br>` : ''}
+          ${info.telefono ? `<a href="tel:${info.telefono}" class="btn-contactar">📞 Contactar ahora</a>` : ''}
         </div>
       </div>
     </section>
@@ -126,15 +127,15 @@ function mostrarProductosPorCategoria(categoria) {
   menuContainer.innerHTML = '';
   const categoriaObj = (window.menuData || []).find(cat => cat.categoria === categoria);
   if (!categoriaObj) return;
-  categoriaObj.productos.forEach((producto, idx) => {
+  (categoriaObj.productos || []).forEach((producto, idx) => {
     const card = document.createElement('div');
     card.className = 'card';
     card.style.opacity = 0;
     card.style.transform = 'translateY(30px) scale(0.98)';
     card.innerHTML = `
-      <h3>${producto.nombre}</h3>
-      <p>${producto.descripcion}</p>
-      <div class="price">${producto.precio}</div>
+      <h3>${producto.nombre || ''}</h3>
+      <p>${producto.descripcion || ''}</p>
+      <div class="price">${producto.precio || ''}</div>
     `;
     menuContainer.appendChild(card);
     setTimeout(() => {
@@ -147,11 +148,90 @@ function mostrarProductosPorCategoria(categoria) {
   window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
+function inicializarWeb() {
+  // Cargar info-bar.json y luego menu.json, y luego inicializar todo lo visual
+  fetch('datos/info-bar.json')
+    .then(r => r.json())
+    .then(info => {
+      window.infoBar = info;
+
+      // Actualizar elementos visuales principales
+      if (document.getElementById('bar-nombre'))
+        document.getElementById('bar-nombre').textContent = info.nombreBar || '';
+      if (document.getElementById('bar-direccion'))
+        document.getElementById('bar-direccion').textContent = info.direccion || '';
+      if (document.getElementById('logo-img')) {
+        document.getElementById('logo-img').src = info.logo || '';
+        document.getElementById('logo-img').alt = 'Logo ' + (info.nombreBar || '');
+      }
+      if (document.getElementById('banner-img')) {
+        document.getElementById('banner-img').src = info.banner || '';
+        document.getElementById('banner-img').alt = 'Banner ' + (info.nombreBar || '');
+      }
+      if (info.colores) {
+        const root = document.documentElement;
+        Object.entries(info.colores).forEach(([key, value]) => {
+          root.style.setProperty(`--${key}`, value);
+        });
+      }
+
+      // Actualizar meta y title
+      document.title = info.nombreBar || '';
+      const metaTitle = document.getElementById('meta-title');
+      if (metaTitle) metaTitle.textContent = info.nombreBar || '';
+      const metaDesc = document.getElementById('meta-description');
+      if (metaDesc) metaDesc.setAttribute('content', info.descripcion || '');
+      const metaKeywords = document.getElementById('meta-keywords');
+      if (metaKeywords) metaKeywords.setAttribute('content', info.keywords || '');
+      const metaAuthor = document.getElementById('meta-author');
+      if (metaAuthor) metaAuthor.setAttribute('content', info.nombreBar || '');
+
+      // Footer: logo, enlaces y derechos reservados
+      const logoFooter = document.getElementById('footer-logo');
+      if (logoFooter) {
+        logoFooter.src = info.logoFooter || info.logo || 'imagenes/logo-bar.png';
+        logoFooter.alt = info.nombreBar || '';
+      }
+      const redes = info.redes || {};
+      if (document.getElementById('footer-twitter')) {
+        document.getElementById('footer-twitter').href = redes.twitter || "#";
+      }
+      if (document.getElementById('footer-tiktok')) {
+        document.getElementById('footer-tiktok').href = redes.tiktok || "#";
+      }
+      if (document.getElementById('footer-youtube')) {
+        document.getElementById('footer-youtube').href = redes.youtube || "#";
+      }
+      if (document.getElementById('footer-instagram')) {
+        document.getElementById('footer-instagram').href = redes.instagram || "#";
+      }
+      const year = new Date().getFullYear();
+      const derechos = document.getElementById('footer-derechos');
+      if (derechos) {
+        if (info.footerDerechos) {
+          derechos.textContent = info.footerDerechos.replace('{year}', year).replace('{bar}', info.nombreBar || '');
+        } else {
+          derechos.textContent = `© ${year} ${info.nombreBar || ''}. Todos los derechos reservados.`;
+        }
+      }
+
+      // Ahora cargar el menú y la navegación
+      fetch('datos/menu.json')
+        .then(response => response.json())
+        .then(data => {
+          window.menuData = data;
+          generarNavegadorCategorias(data);
+          // Seleccionar la primera categoría por defecto
+          if (data.length > 0) {
+            setActiveCategory(data[0].categoria);
+            mostrarProductosPorCategoria(data[0].categoria);
+          }
+        });
+    });
+}
+
 window.addEventListener('DOMContentLoaded', () => {
-  inicializarInfoBarYMeta();
-  cargarInfoBar(() => {
-    cargarMenuYNavDesdeJSON();
-  });
+  inicializarWeb();
 });
 
 document.addEventListener('DOMContentLoaded', function () {
@@ -174,13 +254,19 @@ let stickyHeader = null;
 
 function crearStickyHeader() {
   if (stickyHeader) return;
+  // Obtener datos de info-bar.json si están cargados
+  const info = window.infoBar || {};
   stickyHeader = document.createElement('div');
   stickyHeader.className = 'sticky-header';
   stickyHeader.innerHTML = `
-    <div class="sticky-banner-bg"><img src='imagenes/banner-bar.jpg' alt='Banner Bar Atenea'></div>
+    <div class="sticky-banner-bg">
+      <img src="${info.banner || ''}" alt="Banner ${info.nombreBar || 'Bar'}">
+    </div>
     <div class="sticky-header-row" style="display:flex;align-items:center;gap:0.7rem;z-index:2;position:relative;">
-      <div class="sticky-logo"><img src="imagenes/logo-bar.png" alt="Logo Bar Atenea"></div>
-      <div class="sticky-title">Bar Atenea</div>
+      <div class="sticky-logo">
+        <img src="${info.logo || ''}" alt="Logo ${info.nombreBar || 'Bar'}">
+      </div>
+      <div class="sticky-title">${info.nombreBar || ''}</div>
     </div>
     <nav class="nav-scroll-wrapper sticky-nav">
       <ul class="nav-list"></ul>
@@ -223,44 +309,6 @@ document.addEventListener('click', function (e) {
     setTimeout(actualizarStickyNav, 0);
   }
 });
-
-// Footer: logo, enlaces y derechos reservados desde info-bar.json
-fetch('datos/info-bar.json')
-  .then(res => res.json())
-  .then(data => {
-    // Logo
-    const logoFooter = document.getElementById('footer-logo');
-    if (logoFooter) {
-      logoFooter.src = data.logoFooter || data.logo || 'imagenes/logo-bar.png';
-      logoFooter.alt = data.nombreBar || 'Logo Bar';
-    }
-
-    // Redes sociales (solo enlaces)
-    const redes = data.redes || {};
-    if (document.getElementById('footer-twitter')) {
-      document.getElementById('footer-twitter').href = redes.twitter || "#";
-    }
-    if (document.getElementById('footer-tiktok')) {
-      document.getElementById('footer-tiktok').href = redes.tiktok || "#";
-    }
-    if (document.getElementById('footer-youtube')) {
-      document.getElementById('footer-youtube').href = redes.youtube || "#";
-    }
-    if (document.getElementById('footer-instagram')) {
-      document.getElementById('footer-instagram').href = redes.instagram || "#";
-    }
-
-    // Derechos reservados desde info-bar.json
-    const year = new Date().getFullYear();
-    const derechos = document.getElementById('footer-derechos');
-    if (derechos) {
-      if (data.footerDerechos) {
-        derechos.textContent = data.footerDerechos.replace('{year}', year).replace('{bar}', data.nombreBar || 'Bar Atenea');
-      } else {
-        derechos.textContent = `© ${year} ${data.nombreBar || 'Bar Atenea'}. Todos los derechos reservados.`;
-      }
-    }
-  });
 
 console.log('¡Gracias por visitar Bar Atenea! Disfruta de nuestra comida y bebidas.');
 console.log('Página Web realizada por: ByRuby12 - https://github.com/ByRuby12 ');

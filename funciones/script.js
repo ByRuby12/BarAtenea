@@ -109,7 +109,7 @@ function renderContactoSection() {
         <div>⏰ ${info.horario || ''}</div>
         <div>📧 ${info.email || ''}</div>
         <div class="enlace-google-maps">
-          ${info.enlaceGoogleMaps ? `<a href="${info.enlaceGoogleMaps}" class="btn-reseña-google" target="_blank" rel="noopener">⭐ Calificanos ahora</a><br>` : ''}
+          ${info.enlaceGoogleMaps ? `<a href="${info.enlaceGoogleMaps}" class="btn-reseña-google" target="_blank" rel="noopener">📊 Califícanos ahora</a><br>` : ''}
           ${info.telefono ? `<a href="tel:${info.telefono}" class="btn-contactar">📞 Contactar ahora</a>` : ''}
         </div>
       </div>

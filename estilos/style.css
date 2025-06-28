@@ -814,7 +814,7 @@ header {
   background: linear-gradient(120deg, var(--color-contact-bg) 80%, var(--color-contact-gradient) 100%);
   border-radius: 18px;
   box-shadow: 0 4px 24px var(--color-contact-shadow), 0 1.5px 8px var(--color-contact-shadow-yellow);
-  margin: 2.2rem auto 1.5rem auto;
+  margin: 1.2rem auto 1.5rem auto;
   padding: 2.2rem 1.5rem 1.7rem 1.5rem;
   max-width: 400px;
   color: var(--color-contact-text);

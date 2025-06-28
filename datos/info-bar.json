@@ -4,16 +4,25 @@
   "telefono": "918791714",
   "email": "info@baratenea.com",
   "horario": "Lunes a Domingos: 7:00 - 00:00",
-  "enlaceGoogleMaps": "https://www.google.com/search?hl=es-ES&gl=es&q=Bar+L%C3%ADnea+123,+Av.+de+Orovilla,+46,+Villaverde,+28041+Madrid&ludocid=6486868406980179656&lsig=AB86z5UbP4IjfDV7Cc5-2bASxtFX#lrd=0xd422791d571e8d1:0x5a05fc727ec1f6c8,3",
+  "enlaceGoogleMaps": "https://maps.app.goo.gl/e11CLYvdqsRTwsQx7",
   "logo": "imagenes/logo-bar.png",
   "banner": "imagenes/banner-bar.jpg",
   "descripcion": "Bar Atenea - Tu lugar para disfrutar de deliciosos desayunos, raciones, hamburguesas, bocadillos y más.",
   "keywords": "Bar Atenea, desayunos, raciones, hamburguesas, bocadillos, bebidas, postres, promociones, contacto",
+  "logoFooter": "imagenes/logo-bar.png",
+  "footerDerechos": "Copyright ©{year} Todos los derechos reservados para {bar}",
+  "redes": {
+    "twitter": "https://twitter.com/baratenea",
+    "tiktok": "https://tiktok.com/@baratenea",
+    "youtube": "https://youtube.com/@baratenea",
+    "instagram": "https://instagram.com/baratenea"
+  },
   "colores": {
     "color-header-bg": "#1e1e1e",
     "color-header-border": "#2a2a2a",
     "color-logo-bg": "#fff",
     "color-logo-shadow": "#0003",
+    "color-logo-shadow-anim": "#ffc10755",
     "color-logo": "#FFD600",
 
     "color-top-banner-bg": "#232323",
@@ -82,18 +91,11 @@
     "color-contact-btn-contactar-shadow2": "#ffc10755",
     "color-contact-btn-contactar-hover-shadow": "#ffc107aa",
 
-    "color-footer-bg": "#232323",
-    "color-footer-text": "#FFD600",
-    "color-footer-link": "#FFD600",
-    "color-footer-link-hover": "#fffbe7",
-    "color-footer-border": "#ffc107",
-    "color-logo-shadow-anim": "#ffc10755",
-
     "color-efecto-amarillo": "#FFD600",
     "color-yellow-effect": "#FFD600",
 
     "color-product-title": "#ffc107",
-    "color-product-title-hover": "#ffc107",
+    "color-product-title-hover": "#fff",
     "color-product-card-border-hover": "#ffb300",
 
     "color-btn-reseña-bg": "#ffc107",
@@ -104,6 +106,27 @@
     "color-btn-reseña-hover-border": "#FFB300",
     "color-btn-reseña-shadow": "#ffc107",
     "color-btn-reseña-shadow2": "#ffc10755",
-    "color-btn-reseña-hover-shadow": "#ffc107aa"
+    "color-btn-reseña-hover-shadow": "#ffc107aa",
+
+    "footer-bg": "#18191a",
+    "footer-main-border": "#ffbf00",
+    "footer-text": "#ffe066",
+    "footer-divider": "#ffbf00",
+    "footer-social-bg": "#232323",
+    "footer-social-icon-bg": "#232323",
+    "footer-social-icon-color": "#ffd600",
+    "footer-social-icon-hover-bg": "#ffd600",
+    "footer-social-icon-hover-color": "#232323",
+    "footer-social-icon-shadow": "#ffd60044",
+    "footer-social-border": "#ffd600",
+    "footer-social-divider": "#ffd60055",
+    "footer-link": "#ffd600",
+    "footer-link-hover": "#fffbe7",
+    "footer-copyright": "#ffe066",
+    "footer-shadow": "#ffd60033",
+    "footer-social-focus": "#fffbe7",
+    "footer-social-row-bg": "transparent",
+    "footer-social-icon-filter": "#ffd60055",
+    "footer-social-icon-filter-hover": "#ffd60088"
   }
 }

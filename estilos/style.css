@@ -1,121 +1,122 @@
 :root {
   /* ====== Colores generales de la web ====== */
-  --color-header-bg: #1e1e1e;
-  --color-header-border: #2a2a2a;
+  --color-header-bg: #fff;
+  --color-header-border: #fff;
   --color-logo-bg: #fff;
-  --color-logo-shadow-anim: #ffc10755;
-  --color-logo-shadow: #0003;
-  --color-logo: #FFD600;
+  --color-logo-shadow-anim: #fff;
+  --color-logo-shadow: #fff;
+  --color-logo: #fff;
 
-  --color-top-banner-bg: #232323;
-  --color-banner-bg: #232323;
-  --color-banner-overlay: #232323cc;
-  --color-bg-main: #181818;
+  --color-top-banner-bg: #fff;
+  --color-banner-bg: #fff;
+  --color-banner-overlay: #fff;
+  --color-bg-main: #fff;
 
   --color-bar-title: #fff;
-  --color-bar-title-h1: #ffc107;
-  --color-bar-title-h1-shadow: #0008;
+  --color-bar-title-h1: #fff;
+  --color-bar-title-h1-shadow: #fff;
   --color-bar-address: #fff;
-  --color-bar-address-shadow: #000a;
-  --color-bar-name: #FFD600;
+  --color-bar-address-shadow: #fff;
+  --color-bar-name: #fff;
 
   /* ====== Navegación ====== */
-  --color-nav-bg: #232323;
-  --color-nav-shadow: #0002;
-  --color-nav-border-bottom: #ffbf00;
-  --color-nav-border: #ffc107;
-  --color-nav-scrollbar-thumb: #ffc107;
-  --color-nav-scrollbar-bg: #232323;
+  --color-nav-bg: #fff;
+  --color-nav-shadow: #fff;
+  --color-nav-border-bottom: #fff;
+  --color-nav-border: #fff;
+  --color-nav-scrollbar-thumb: #fff;
+  --color-nav-scrollbar-bg: #fff;
   --color-nav-text: #fff;
-  --color-nav-active: #ffc107;
-  --color-nav-active-bg: transparent;
-  --color-nav-hover-bg: transparent;
-  --color-nav-hover-text: #ffc107;
-  --color-nav-underline: #ffc107;
-  --color-nav-underline-shadow: #ffc10788;
+  --color-nav-active: #fff;
+  --color-nav-active-bg: #fff;
+  --color-nav-hover-bg: #fff;
+  --color-nav-hover-text: #fff;
+  --color-nav-underline: #fff;
+  --color-nav-underline-shadow: #fff;
 
   /* ====== Tarjetas de productos ====== */
-  --color-card-bg: #232323;
-  --color-card-bg-gradient: #181818;
-  --color-card-border: #232323;
-  --color-card-title-shadow: #0006;
-  --color-card-text: #eee;
-  --color-card-price-bg: #232323;
+  --color-card-bg: #fff;
+  --color-card-bg-gradient: #fff;
+  --color-card-border: #fff;
+  --color-card-title-shadow: #fff;
+  --color-card-text: #fff;
+  --color-card-price-bg: #fff;
   --color-card-price: #fff;
-  --color-card-price-shadow: #ffc10722;
+  --color-card-price-shadow: #fff;
 
   /* ====== Sticky header ====== */
-  --color-sticky-bg: #232323;
-  --color-sticky-shadow: #0005;
+  --color-sticky-bg: #fff;
+  --color-sticky-shadow: #fff;
   --color-sticky-logo-bg: #fff;
-  --color-sticky-logo-shadow: #0002;
-  --color-sticky-title: #ffc107;
-  --color-sticky-title-shadow: #0008;
+  --color-sticky-logo-shadow: #fff;
+  --color-sticky-title: #fff;
+  --color-sticky-title-shadow: #fff;
 
   /* ====== Contacto ====== */
-  --color-contact-bg: #232323;
-  --color-contact-gradient: #181818;
-  --color-contact-shadow: #0005;
-  --color-contact-shadow-yellow: #ffc10722;
-  --color-contact-title: #ffc107;
-  --color-contact-title-shadow: #0008;
+  --color-contact-bg: #fff;
+  --color-contact-gradient: #fff;
+  --color-contact-shadow: #fff;
+  --color-contact-shadow-yellow: #fff;
+  --color-contact-title: #fff;
+  --color-contact-title-shadow: #fff;
   --color-contact-text: #fff;
-  --color-contact-label: #ffc107;
-  --color-contact-box: #181818cc;
-  --color-contact-box-shadow: #0002;
-  --color-contact-btn-bg: #ffc107;
-  --color-contact-btn-text: #232323;
-  --color-contact-btn-hover-bg: #ffb300;
-  --color-contact-btn-hover-text: #232323;
-  --color-contact-btn-contactar-bg: #FFD600;
-  --color-contact-btn-contactar-text: #232323;
-  --color-contact-btn-contactar-hover-bg: #FFB300;
-  --color-contact-btn-contactar-hover-text: #232323;
-  --color-contact-btn-contactar-shadow: #ffc107;
-  --color-contact-btn-contactar-shadow2: #ffc10755;
-  --color-contact-btn-contactar-hover-shadow: #ffc107aa;
+  --color-contact-label: #fff;
+  --color-contact-box: #fff;
+  --color-contact-box-shadow: #fff;
+  --color-contact-btn-bg: #fff;
+  --color-contact-btn-text: #fff;
+  --color-contact-btn-hover-bg: #fff;
+  --color-contact-btn-hover-text: #fff;
+  --color-contact-btn-contactar-bg: #fff;
+  --color-contact-btn-contactar-text: #fff;
+  --color-contact-btn-contactar-hover-bg: #fff;
+  --color-contact-btn-contactar-hover-text: #fff;
+  --color-contact-btn-contactar-shadow: #fff;
+  --color-contact-btn-contactar-shadow2: #fff;
+  --color-contact-btn-contactar-hover-shadow: #fff;
+  --color-contact-title-hover: #fff;
 
   /* ====== Efectos generales ====== */
-  --color-efecto-amarillo: #FFD600;
-  --color-yellow-effect: #FFD600;
+  --color-efecto-amarillo: #fff;
+  --color-yellow-effect: #fff;
 
   /* ====== Personalización de productos ====== */
-  --color-product-title: #ffc107;              
-  --color-product-title-hover: #fff;           
-  --color-product-card-border-hover: #ffb300;  
+  --color-product-title: #fff;
+  --color-product-title-hover: #fff;
+  --color-product-card-border-hover: #fff;
 
   /* ====== Botón de reseña en Google ====== */
-  --color-btn-reseña-bg: #ffc107;
-  --color-btn-reseña-text: #232323;
-  --color-btn-reseña-hover-bg: #ffb300;
-  --color-btn-reseña-hover-text: #232323;
-  --color-btn-reseña-border: #FFD600;
-  --color-btn-reseña-hover-border: #FFB300;
-  --color-btn-reseña-shadow: #ffc107;
-  --color-btn-reseña-shadow2: #ffc10755;
-  --color-btn-reseña-hover-shadow: #ffc107aa;
+  --color-btn-reseña-bg: #fff;
+  --color-btn-reseña-text: #fff;
+  --color-btn-reseña-hover-bg: #fff;
+  --color-btn-reseña-hover-text: #fff;
+  --color-btn-reseña-border: #fff;
+  --color-btn-reseña-hover-border: #fff;
+  --color-btn-reseña-shadow: #fff;
+  --color-btn-reseña-shadow2: #fff;
+  --color-btn-reseña-hover-shadow: #fff;
 
   /* ====== Footer Moderno Redes Sociales ====== */
-  --footer-bg: #18191a;
-  --footer-main-border: #ffbf00;
-  --footer-text: #ffe066;
-  --footer-divider: #ffbf00;
-  --footer-social-bg: #232323;
-  --footer-social-icon-bg: #232323;
-  --footer-social-icon-color: #ffd600;
-  --footer-social-icon-hover-bg: #ffd600;
-  --footer-social-icon-hover-color: #232323;
-  --footer-social-icon-shadow: #ffd60044;
-  --footer-social-border: #ffd600;
-  --footer-social-divider: #ffd60055;
-  --footer-link: #ffd600;
-  --footer-link-hover: #fffbe7;
-  --footer-copyright: #ffe066;
-  --footer-shadow: #ffd60033;
-  --footer-social-focus: #fffbe7;
-  --footer-social-row-bg: transparent;
-  --footer-social-icon-filter: #ffd60055;
-  --footer-social-icon-filter-hover: #ffd60088;
+  --footer-bg: #fff;
+  --footer-main-border: #fff;
+  --footer-text: #fff;
+  --footer-divider: #fff;
+  --footer-social-bg: #fff;
+  --footer-social-icon-bg: #fff;
+  --footer-social-icon-color: #fff;
+  --footer-social-icon-hover-bg: #fff;
+  --footer-social-icon-hover-color: #fff;
+  --footer-social-icon-shadow: #fff;
+  --footer-social-border: #fff;
+  --footer-social-divider: #fff;
+  --footer-link: #fff;
+  --footer-link-hover: #fff;
+  --footer-copyright: #fff;
+  --footer-shadow: #fff;
+  --footer-social-focus: #fff;
+  --footer-social-row-bg: #fff;
+  --footer-social-icon-filter: #fff;
+  --footer-social-icon-filter-hover: #fff;
 }
 
 /* =========================
@@ -210,8 +211,8 @@ header {
   overflow: hidden;
 }
 .logo-container img {
-  width: 74px;
-  height: 74px;
+  width: 85px;
+  height: 85px;
   object-fit: contain;
 }
 .bar-title {
@@ -410,6 +411,9 @@ header {
 
 /* Mejorar cards de productos */
 .card {
+  opacity: 0;
+  transform: translateY(30px) scale(0.98);
+  animation: fadeInCard 0.4s cubic-bezier(.4,1.3,.5,1) forwards;
   background: linear-gradient(135deg, var(--color-card-bg) 70%, var(--color-card-bg-gradient) 100%);
   padding: 1.2rem 1rem 1.1rem 1rem;
   border-radius: 16px;
@@ -616,205 +620,12 @@ header {
   to { opacity: 1; transform: translateY(0); }
 }
 
-/* CONTACTO MODERNO Y RESPONSIVE - SIMPLIFICADO */
-.contacto-section,
-.contacto-section.contacto-simple,
-.contacto-section.contacto-grid {
-  background: linear-gradient(120deg, var(--color-contact-bg) 80%, var(--color-contact-gradient) 100%);
-  border-radius: 18px;
-  box-shadow: 0 4px 24px var(--color-contact-shadow), 0 1.5px 8px var(--color-contact-shadow-yellow);
-  margin: 2.2rem auto 1.5rem auto;
-  color: var(--color-contact-text);
-  position: relative;
-  overflow: hidden;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  gap: 1.2rem;
-  padding: 2.2rem 1.5rem 1.7rem 1.5rem;
-  max-width: 430px;
-}
-
-.contacto-section.contacto-grid {
-  display: grid;
-  grid-template-columns: 1.1fr 1fr;
-  gap: 2.2rem;
-  max-width: 700px;
-  min-height: 270px;
-  padding: 2.2rem 2.2rem 1.7rem 2.2rem;
-}
-
-.contacto-section h2 {
-  color: var(--color-contact-title);
-  font-size: 2rem;
-  margin-bottom: 0.7rem;
-  letter-spacing: 1px;
-  text-shadow: 0 2px 8px var(--color-contact-title-shadow);
-}
-
-.contacto-section .contacto-info,
-.contacto-section.contacto-grid .contacto-info {
-  display: flex;
-  flex-direction: column;
-  gap: 1.1rem;
-  align-items: flex-start;
-  margin-bottom: 0.2rem;
-}
-
-.contacto-section .dato,
-.contacto-section.contacto-grid .dato {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  font-size: 1.08rem;
-  color: var(--color-contact-label);
-  background: var(--color-contact-box);
-  border-radius: 8px;
-  padding: 0.5rem 1rem;
-  box-shadow: 0 1px 6px var(--color-contact-box-shadow);
-}
-
-.contacto-section .dato span,
-.contacto-section.contacto-grid .dato span {
-  color: var(--color-contact-text);
-  font-weight: 400;
-  font-size: 1.01rem;
-}
-
-.contacto-section .contacto-botones,
-.contacto-section.contacto-grid .contacto-botones {
-  display: flex;
-  flex-direction: row;
-  gap: 1rem;
-  justify-content: center;
-  margin-bottom: 0.2rem;
-  flex-wrap: wrap;
-}
-
-/* Solo para grid */
-.contacto-section.contacto-grid .contacto-col.info {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 1.1rem;
-}
-.contacto-section.contacto-grid .contacto-col.acciones {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  gap: 1.2rem;
-}
-.contacto-section.contacto-grid .contacto-img {
-  width: 100%;
-  max-width: 220px;
-  border-radius: 12px;
-  overflow: hidden;
-  box-shadow: 0 2px 12px #0005;
-  margin: 0 auto;
-}
-.contacto-section.contacto-grid .contacto-img img {
-  width: 100%;
-  height: 120px;
-  object-fit: cover;
-  object-position: center;
-  border-radius: 12px;
-  filter: brightness(0.92) contrast(1.08);
-}
-
-/* Animaciones y detalles */
-.animate-contacto {
-  animation: fadeInContacto 0.8s cubic-bezier(.4,1.3,.5,1);
-}
-@keyframes fadeInContacto {
-  from {
-    opacity: 0;
-    transform: translateY(40px) scale(0.97);
-    filter: blur(6px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0) scale(1);
-    filter: blur(0);
-  }
-}
-.animate-contacto-info > details {
-  opacity: 0;
-  transform: translateY(30px) scale(0.97);
-  animation: fadeInContactoInfo 0.7s cubic-bezier(.4,1.3,.5,1) forwards;
-}
-.animate-contacto-info > details:nth-child(1) { animation-delay: 0.1s; }
-.animate-contacto-info > details:nth-child(2) { animation-delay: 0.25s; }
-.animate-contacto-info > details:nth-child(3) { animation-delay: 0.4s; }
-@keyframes fadeInContactoInfo {
-  from { opacity: 0; transform: translateY(30px) scale(0.97); }
-  to { opacity: 1; transform: translateY(0) scale(1); }
-}
-
-/* Responsive */
-@media (max-width: 900px) {
-  .contacto-section.contacto-grid {
-    grid-template-columns: 1fr;
-    padding: 1.2rem 0.7rem 1.2rem 0.7rem;
-    gap: 1.2rem;
-    max-width: 99vw;
-  }
-  .contacto-section.contacto-grid .contacto-col.acciones {
-    flex-direction: row;
-    gap: 1.2rem;
-    justify-content: center;
-    align-items: center;
-  }
-  .contacto-section.contacto-grid .contacto-img {
-    max-width: 140px;
-    height: 80px;
-  }
-  .contacto-section.contacto-grid .contacto-img img {
-    height: 80px;
-  }
-}
-@media (max-width: 600px) {
-  .contacto-section,
-  .contacto-section.contacto-simple {
-    max-width: 99vw;
-    padding: 1rem 0.1rem 1rem 0.1rem;
-    border-radius: 8px;
-    gap: 0.7rem;
-  }
-  .contacto-section h2 {
-    font-size: 1.15rem;
-  }
-  .contacto-section .dato,
-  .contacto-section.contacto-grid .dato {
-    font-size: 0.97rem;
-    padding: 0.32rem 0.5rem;
-    border-radius: 6px;
-  }
-  .contacto-section .contacto-botones,
-  .contacto-section.contacto-grid .contacto-botones {
-    gap: 0.5rem;
-  }
-  .contacto-section.contacto-grid {
-    grid-template-columns: 1fr;
-    padding: 0.7rem 0.1rem 0.7rem 0.1rem;
-    gap: 0.7rem;
-    border-radius: 8px;
-  }
-  .contacto-section.contacto-grid .contacto-img {
-    max-width: 100px;
-    height: 60px;
-  }
-  .contacto-section.contacto-grid .contacto-img img {
-    height: 60px;
-  }
-}
-
 /* CONTACTO SIMPLE Y MODERNO CON DETALLES DESPLEGABLES Y EFECTOS */
 .contacto-section.contacto-simple {
   background: linear-gradient(120deg, var(--color-contact-bg) 80%, var(--color-contact-gradient) 100%);
   border-radius: 18px;
-  box-shadow: 0 4px 24px var(--color-contact-shadow), 0 1.5px 8px var(--color-contact-shadow-yellow);
-  margin: 1.2rem auto 1.5rem auto;
+  border: 1.5px solid var(--color-card-border);
+  margin: 1.5rem auto 1.5rem auto;
   padding: 2.2rem 1.5rem 1.7rem 1.5rem;
   max-width: 400px;
   color: var(--color-contact-text);
@@ -859,7 +670,7 @@ header {
   transition: color 0.18s;
 }
 .contacto-section.contacto-simple .contacto-nombre:hover {
-  color: #fff;
+  color: var(--color-contact-title-hover);
 }
 .contacto-section.contacto-simple .contacto-info {
   display: flex;
@@ -868,87 +679,12 @@ header {
   align-items: center;
   width: 100%;
 }
-.animate-contacto-info > details {
-  opacity: 0;
-  transform: translateY(30px) scale(0.97);
-  animation: fadeInContactoInfo 0.7s cubic-bezier(.4,1.3,.5,1) forwards;
-}
-.animate-contacto-info > details:nth-child(1) { animation-delay: 0.1s; }
-.animate-contacto-info > details:nth-child(2) { animation-delay: 0.25s; }
-.animate-contacto-info > details:nth-child(3) { animation-delay: 0.4s; }
 @keyframes fadeInLogo {
   from { opacity: 0; transform: scale(0.7) rotate(-10deg); }
   to { opacity: 1; transform: scale(1) rotate(0); }
 }
-@keyframes fadeInContactoInfo {
-  from { opacity: 0; transform: translateY(30px) scale(0.97); }
-  to { opacity: 1; transform: translateY(0) scale(1); }
-}
-.contacto-section.contacto-simple details.dato {
-  width: 100%;
-  background: #181818cc;
-  border-radius: 8px;
-  box-shadow: 0 1px 6px #0002;
-  color: #ffc107;
-  font-size: 1.13rem;
-  padding: 0.1rem 0.1rem;
-  margin: 0 auto;
-  text-align: left;
-  transition: box-shadow 0.18s;
-  display: block;
-  /* Forzar disposición vertical */
-  flex-direction: column;
-}
-.contacto-section.contacto-simple details.dato[open] {
-  box-shadow: 0 2px 12px #ffc10733;
-}
-.contacto-section.contacto-simple summary {
-  cursor: pointer;
-  outline: none;
-  padding: 0.7rem 1.2rem;
-  border-radius: 8px;
-  font-weight: 600;
-  color: #ffc107;
-  display: block;
-  width: 100%;
-  /* Forzar que el summary sea un bloque y ocupe todo el ancho */
-  background: none;
-  list-style: none;
-  transition: background 0.18s;
-}
-.contacto-section.contacto-simple summary::-webkit-details-marker {
-  display: none;
-}
-.contacto-section.contacto-simple .dato-detalle {
-  color: #fff;
-  font-size: 1.01rem;
-  padding: 0.5rem 1.2rem 0.7rem 2.2rem;
-  border-radius: 0 0 8px 8px;
-  background: none;
-  font-weight: 400;
-  display: block;
-  width: 100%;
-  /* Forzar que el contenido siempre esté debajo */
-  margin-top: 0;
-}
 
-/* Forzar que el contenido de <details> siempre salga debajo del <summary> */
-.contacto-section.contacto-simple details.dato,
-.contacto-section.contacto-simple summary {
-  display: block;
-  width: 100%;
-}
-.contacto-section.contacto-simple summary {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  width: 100%;
-}
-.contacto-section.contacto-simple .dato-detalle {
-  display: block;
-  width: 100%;
-  box-sizing: border-box;
-}
+/* Responsive */
 @media (max-width: 600px) {
   .contacto-section.contacto-simple {
     max-width: 99vw;
@@ -962,7 +698,7 @@ header {
     border-radius: 16px;
   }
   .contacto-section.contacto-simple .contacto-nombre {
-    font-size: 1.25rem;
+    font-size: 2rem;
   }
   .contacto-section.contacto-simple details.dato {
     font-size: 1.01rem;
@@ -1121,6 +857,22 @@ header {
     margin-right: 0.4em;
     border-width: 1.2px;
   }
+}
+
+.contacto-section,
+.contacto-section.contacto-simple,
+.contacto-section.contacto-grid {
+  opacity: 0;
+  transform: translateY(30px) scale(0.98);
+  animation: fadeInCard 0.4s cubic-bezier(.4,1.3,.5,1) forwards;
+  border: 1.5px solid var(--color-card-border);
+}
+
+/* Hover igual que las cards de productos */
+.contacto-section:hover,
+.contacto-section.contacto-simple:hover,
+.contacto-section.contacto-grid:hover {
+  border: 1.5px solid var(--color-product-card-border-hover);
 }
 
 /* Botón para contactar por teléfono en la sección de contacto */
@@ -1378,5 +1130,17 @@ body, html {
   }
   .footer-derechos {
     font-size: 12px;
+  }
+}
+
+/* Animación de entrada para cards y contacto */
+@keyframes fadeInCard {
+  from {
+    opacity: 0;
+    transform: translateY(30px) scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
   }
 }

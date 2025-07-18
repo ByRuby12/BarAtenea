@@ -1055,7 +1055,7 @@ body, html {
   max-width: 420px;
   height: 3px;
   background: var(--color-efecto-amarillo);
-  margin: 1.2rem auto 1.2rem auto;
+  margin: 5px auto 5px auto;
   border-radius: 2px;
 }
 

@@ -2,103 +2,86 @@
   {
     "categoria": "Desayunos",
     "productos": [
-      {"nombre": "Café + Tostada", "descripcion": "Café recién hecho acompañado de tostada crujiente con aceite de oliva o mantequilla y mermelada a elegir.", "precio": "3,50€"},
-      {"nombre": "Croissant + Zumo", "descripcion": "Croissant artesanal horneado al momento acompañado de zumo de naranja natural.", "precio": "4,00€"},
-      {"nombre": "Tostada de Jamón Ibérico", "descripcion": "Tostada crujiente con tomate natural y generosa loncha de jamón ibérico de bellota.", "precio": "4,20€"}
+      {"nombre": "Café", "descripcion": "Café solo, cortado, americano o con leche.", "precio": "1,60€"},
+      {"nombre": "Infusión", "descripcion": "Variedad de infusiones calientes.", "precio": "1,60€"},
+      {"nombre": "Tostada", "descripcion": "Tostada de pan crujiente con aceite de oliva y tomate.", "precio": "0,00€"},
+      {"nombre": "Tostada con Mantequilla y Mermelada", "descripcion": "Tostada con mantequilla y mermelada a elegir.", "precio": "0,00€"},
+      {"nombre": "Tostada con Jamón", "descripcion": "Tostada con jamón serrano y tomate.", "precio": "0,00€"}
     ]
   },
   {
-    "categoria": "TexMex",
+    "categoria": "Hamburguesas",
     "productos": [
-      {"nombre": "Huevos Estrellados", "descripcion": "Huevos fritos con patatas caseras, acompañados de bacon crujiente, pimientos, jamón serrano, pollo crujiente y morcilla.", "precio": "9,50€"},
-      {"nombre": "Tequeños", "descripcion": "Deliciosos palitos de masa crujiente rellenos de queso fundido, servidos con salsa especial.", "precio": "10,00€"},
-      {"nombre": "Super Nachos", "descripcion": "Totopos con guacamole, crema de queso, carne picada con chili, jalapeños y lima a la plancha.", "precio": "12,00€"},
-      {"nombre": "Bacon Cheese Fries", "descripcion": "Patatas fritas con queso fundido y crujientes tiras de bacon.", "precio": "10,00€"},
-      {"nombre": "Wrap Pollo", "descripcion": "Tortilla de trigo rellena de pollo crujiente, lechuga fresca, tomate y salsa especial.", "precio": "9,00€"},
-      {"nombre": "Burrito Pulled Pork", "descripcion": "Burrito relleno de pulled pork jugoso, arroz especiado, frijoles y salsa BBQ casera.", "precio": "9,00€"},
-      {"nombre": "Ribs Atenea", "descripcion": "Costillar de cerdo en salsa BBQ, acompañado de mazorca de maíz, boniato y patatas fritas.", "precio": "15,00€"},
-      {"nombre": "Chupa Chups", "descripcion": "Brochetas de pollo crujiente con rebozado especial, acompañadas de salsa para mojar.", "precio": "10,00€"},
-      {"nombre": "Tiras de Pollo", "descripcion": "Crujientes tiras de pollo empanado, doradas al punto y acompañadas de salsa a elegir.", "precio": "10,00€"}
-    ]
-  },
-  {
-    "categoria": "Entrepanes",
-    "productos": [
-      {"nombre": "Bocadillo/Montado de Lomo", "descripcion": "Lomo de cerdo a la plancha en pan crujiente o montado en pan pequeño.", "precio": "7,00 - 4,00€"},
-      {"nombre": "Bocadillo/Montado de Panceta", "descripcion": "Panceta dorada y jugosa servida en pan tradicional o montado.", "precio": "7,00 - 4,00€"},
-      {"nombre": "Bocadillo/Montado de Bacon", "descripcion": "Crujiente bacon servido en bocadillo clásico o montado.", "precio": "7,00 - 4,00€"},
-      {"nombre": "Bocadillo/Montado de Chorizo", "descripcion": "Chorizo frito o a la plancha, con todo su sabor, servido en pan tierno.", "precio": "7,00 - 4,00€"},
-      {"nombre": "Bocadillo/Montado de Pechuga de Pollo", "descripcion": "Pechuga de pollo a la plancha, jugosa y ligera.", "precio": "7,00 - 4,00€"},
-      {"nombre": "Bocadillo/Montado de Calamares", "descripcion": "Clásico bocata de calamares a la andaluza, crujientes y sabrosos.", "precio": "7,00 - 4,00€"},
-      {"nombre": "Bocadillo/Montado de Morcilla", "descripcion": "Morcilla bien hecha, con un toque especiado que no deja indiferente.", "precio": "7,00 - 4,00€"},
-      {"nombre": "Bocadillo/Montado de Vegetal", "descripcion": "Lechuga, tomate, huevo duro y mayonesa para una opción fresca y ligera.", "precio": "7,00 - 4,00€"},
-      {"nombre": "Bocadillo/Montado de Atun Pimientos", "descripcion": "Atún con pimientos del piquillo asados, ideal para todos los gustos.", "precio": "7,00 - 4,00€"},
-      {"nombre": "Bocadillo/Montado de Oreja Salsa Brava", "descripcion": "Oreja a la plancha con potente salsa brava. Puro sabor castizo.", "precio": "7,00 - 4,00€"},
-      {"nombre": "Bocadillo/Montado de Tortilla", "descripcion": "Tortilla de patatas jugosa, servida en pan tierno.", "precio": "7,00 - 4,00€"},
-      {"nombre": "Bocadillo/Montado de Jamón", "descripcion": "Jamón serrano curado de calidad, en pan crujiente.", "precio": "7,00 - 4,00€"},
-      {"nombre": "Bocadillo/Montado de Atenea", "descripcion": "Pollo a la plancha, bacon, lechuga, tomate y mayonesa. Fresco y sabroso.", "precio": "8,50 - 5,00€"},
-      {"nombre": "Bocadillo/Montado de Pepito Ternera", "descripcion": "Clásico pepito de ternera tierna a la plancha en pan tierno.", "precio": "9,00€"}
-    ]
-  },
-  {
-    "categoria": "Ensaladas",
-    "productos": [
-      {"nombre": "Mixta", "descripcion": "Lechuga, tomate, atún, huevo duro, cebolla y aceitunas.", "precio": "7,50€"},
-      {"nombre": "Cesar", "descripcion": "Lechuga romana, pollo crujiente, queso parmesano y picatostes con salsa César.", "precio": "10,00€"},
-      {"nombre": "Ensalada Atenea", "descripcion": "Lechuga variada con tomate, queso de cabra, bacon, miel mostaza y queso rallado.", "precio": "10,00€"},
-      {"nombre": "Burrata", "descripcion": "Base de rúcula y tomate con burrata cremosa y un toque de pesto.", "precio": "9,00€"},
-      {"nombre": "Cubano", "descripcion": "Ensalada ligera con arroz, frijoles, plátano frito y aguacate.", "precio": "5,50€"}
+      {"nombre": "Clásica", "descripcion": "Carne de ternera jugosa con lechuga, tomate, cebolla y nuestra salsa especial.", "precio": "8,00€"},
+      {"nombre": "Cubana", "descripcion": "Hamburguesa al estilo cubano con carne sazonada, plátano frito, queso fundido y salsa criolla.", "precio": "8,50€"},
+      {"nombre": "Atenea", "descripcion": "Especial de la casa con ingredientes seleccionados.", "precio": "10,00€"},
+      {"nombre": "Crispy Chicken", "descripcion": "Crujiente pollo empanado con salsa BBQ, lechuga, tomate, pepinillo y bacon.", "precio": "8,50€"},
+      {"nombre": "BBQ", "descripcion": "Carne a la parrilla con aros de cebolla, bacon y una generosa dosis de salsa BBQ.", "precio": "10,00€"},
+      {"nombre": "Smash Burguer", "descripcion": "Carne smash con tomate picado, salsa cheddar cremosa y cebolla crujiente.", "precio": "10,00€"},
+      {"nombre": "Pulled Pork", "descripcion": "Tierna carne de cerdo desmenuzada con doble de queso y rodajas de tomate fresco.", "precio": "10,00€"}
     ]
   },
   {
     "categoria": "Raciones",
     "productos": [
-      {"nombre": "Patatas Brava/Alioli", "descripcion": "Patatas fritas crujientes con alioli casero o brava picante.", "precio": "7,00€"},
-      {"nombre": "Morcilla", "descripcion": "Morcilla de Burgos servida caliente, perfecta para compartir.", "precio": "8,00€"},
-      {"nombre": "Calamares", "descripcion": "Calamares a la romana, tiernos y rebozados al punto.", "precio": "10,00€"},
-      {"nombre": "Oreja Plancha", "descripcion": "Oreja crujiente a la plancha con pimentón y ajo.", "precio": "9,00€"},
-      {"nombre": "Croquetones Jamón", "descripcion": "Croquetas caseras gigantes de jamón ibérico.", "precio": "8,50€"},
-      {"nombre": "Queso Manchego", "descripcion": "Queso curado de oveja con sabor intenso y textura firme.", "precio": "8,00€"},
-      {"nombre": "Cazón Adobo", "descripcion": "Cazón aliñado al estilo andaluz, sabroso y aromático.", "precio": "12,00€"},
-      {"nombre": "Chopitos", "descripcion": "Chopitos fritos al estilo tradicional.", "precio": "8,50€"},
-      {"nombre": "Sepia Entera", "descripcion": "Sepia a la plancha con ajo y perejil, servida entera.", "precio": "14,00€"},
-      {"nombre": "Oreja Salsa Brava", "descripcion": "Oreja con nuestra brava especial: crujiente y sabrosa.", "precio": "9,50€"},
-      {"nombre": "Torreznos con Granada", "descripcion": "Torreznos tradicionales con un toque dulce de granada.", "precio": "12,00€"},
-      {"nombre": "Alitas", "descripcion": "Alitas de pollo marinadas, al horno o fritas.", "precio": "10,00€"},
-      {"nombre": "Matrimonio", "descripcion": "Anchoas y boquerones en vinagre con aceite de oliva y pan crujiente.", "precio": "12,00€"}
+      {"nombre": "Oreja Plancha", "descripcion": "Oreja crujiente a la plancha con pimentón y ajo, perfecta para compartir con amigos.", "precio": "9,00€"},
+      {"nombre": "Patatas Brava/Alioli", "descripcion": "Patatas fritas crujientes con alioli casero o brava picante, ideales para picar.", "precio": "7,00€"},
+      {"nombre": "Morcilla", "descripcion": "Morcilla de Burgos servida caliente, acompañada de pan y perfecta para compartir.", "precio": "8,00€"},
+      {"nombre": "Calamares", "descripcion": "Calamares a la romana, tiernos y rebozados al punto, acompañados de limón.", "precio": "10,00€"},
+      {"nombre": "Croquetones Jamón", "descripcion": "Croquetas caseras gigantes de jamón ibérico, cremosas por dentro y crujientes por fuera.", "precio": "8,50€"},
+      {"nombre": "Cazón Adobo", "descripcion": "Cazón aliñado al estilo andaluz, sabroso y aromático, con un toque de especias.", "precio": "12,00€"},
+      {"nombre": "Queso Manchego", "descripcion": "Queso curado de oveja con sabor intenso y textura firme, cortado en lascas.", "precio": "8,00€"},
+      {"nombre": "Sepia", "descripcion": "Sepia a la plancha con ajo y perejil, servida entera y acompañada de alioli.", "precio": "14,00€"},
+      {"nombre": "Tabla Ibéricos", "descripcion": "Selección de embutidos ibéricos de calidad, para disfrutar con pan.", "precio": "15,00€"},
+      {"nombre": "Alitas", "descripcion": "Alitas de pollo marinadas, al horno o fritas, con salsa barbacoa.", "precio": "10,00€"},
+      {"nombre": "Rejos", "descripcion": "Rejos fritos crujientes, perfectos para acompañar con una cerveza.", "precio": "12,00€"},
+      {"nombre": "Tiras de Pollo", "descripcion": "Tiras de pollo empanadas, doradas y acompañadas de salsa a elegir.", "precio": "10,00€"},
+      {"nombre": "Tequeños", "descripcion": "Palitos de queso envueltos en masa crujiente, servidos con salsa especial.", "precio": "10,00€"},
+      {"nombre": "Baconcheese", "descripcion": "Patatas con bacon y queso fundido, gratinadas al horno.", "precio": "10,00€"},
+      {"nombre": "Oreja Salsa Brava", "descripcion": "Oreja con nuestra brava especial: crujiente y sabrosa, con salsa picante.", "precio": "10,00€"},
+      {"nombre": "Buñuelos de Bacalao", "descripcion": "Buñuelos caseros de bacalao, esponjosos y con sabor tradicional.", "precio": "10,00€"},
+      {"nombre": "Callos a la Madrileña", "descripcion": "Callos tradicionales madrileños, guisados con chorizo y morcilla.", "precio": "9,00€"},
+      {"nombre": "Chopitos", "descripcion": "Chopitos fritos al estilo tradicional, tiernos y crujientes.", "precio": "10,00€"},
+      {"nombre": "Tabla de Jamón", "descripcion": "Jamón serrano cortado a mano, servido con pan y AOVE.", "precio": "12,00€"},
+      {"nombre": "Super Nachos Cheese", "descripcion": "Nachos con queso fundido, jalapeños y salsa especial.", "precio": "12,00€"},
+      {"nombre": "Huevos Rotos","descripcion": "Con morcilla, gulas, jamón, pollo o bacon. Elige tu favorito.","precio": "9,50€"}
     ]
   },
   {
-    "categoria": "Burgers",
+    "categoria": "Bocadillos y Montados",
     "productos": [
-      {"nombre": "Clásica", "descripcion": "Carne de ternera jugosa con lechuga, tomate, cebolla y nuestra salsa especial.", "precio": "8,00€"},
-      {"nombre": "Cubana", "descripcion": "Hamburguesa al estilo cubano con carne sazonada, plátano frito, queso fundido y salsa criolla.", "precio": "8,50€"},
-      {"nombre": "Burguer Atenea", "descripcion": "Lechuga, tomate, cebolla, carne de ternera, queso cheddar, bacon, miel mostaza y rulo de cabra.", "precio": "12,00€"},
-      {"nombre": "La Burratisima", "descripcion": "Una delicia fresca con lechuga, tomate, pesto, cremosa burrata y jamón serrano.", "precio": "10,00€"},
-      {"nombre": "Brutal Lower Manhattan", "descripcion": "Una bomba de sabor: carne, doble queso cheddar, bacon, chipotle, aros de cebolla, huevo frito, tomate, lechuga, cebolla morada y pepinillo.", "precio": "12,50€"},
-      {"nombre": "Pulled Pork", "descripcion": "Tierna carne de cerdo desmenuzada con doble de queso y rodajas de tomate fresco.", "precio": "12,50€"},
-      {"nombre": "Max Cheese", "descripcion": "Para amantes del queso: gouda empanado, cheddar, edam, rulo de cabra, cebolla caramelizada y miel mostaza.", "precio": "12,50€"},
-      {"nombre": "Chicken BBQ", "descripcion": "Crujiente pollo empanado con salsa BBQ, lechuga, tomate, pepinillo y bacon.", "precio": "12,00€"},
-      {"nombre": "Kentucky", "descripcion": "Pollo a la plancha, bacon crujiente, queso fundido y nuestra irresistible salsa burger.", "precio": "11,00€"},
-      {"nombre": "BBQ Burger", "descripcion": "Carne a la parrilla con aros de cebolla, bacon y una generosa dosis de salsa BBQ.", "precio": "10,00€"},
-      {"nombre": "Mia Mamma", "descripcion": "Combinación perfecta de pulled pork, carne de ternera, queso, cebolla morada y lechuga fresca.", "precio": "12,00€"},
-      {"nombre": "Ibérica", "descripcion": "Sabor español: carne, jamón serrano, tomate, queso manchego, AOVE y queso fresco.", "precio": "12,00€"},
-      {"nombre": "Smash", "descripcion": "Carne smash con tomate picado, salsa cheddar cremosa y cebolla crujiente.", "precio": "10,00€"}
+      {"nombre": "Lomo", "descripcion": "Lomo de cerdo a la plancha en pan crujiente o montado en pan pequeño. Suplemento: +1€ bocadillo, +0,50€ montado.", "precio": "7,00 - 4,50€"},
+      {"nombre": "Panceta", "descripcion": "Panceta dorada y jugosa servida en pan tradicional o montado. Suplemento: +1€ bocadillo, +0,50€ montado.", "precio": "7,00 - 4,50€"},
+      {"nombre": "Bacon", "descripcion": "Crujiente bacon servido en bocadillo clásico o montado. Suplemento: +1€ bocadillo, +0,50€ montado.", "precio": "7,00 - 4,50€"},
+      {"nombre": "Chorizo", "descripcion": "Chorizo frito o a la plancha, con todo su sabor, servido en pan tierno. Suplemento: +1€ bocadillo, +0,50€ montado.", "precio": "7,00 - 4,50€"},
+      {"nombre": "Pechuga de Pollo", "descripcion": "Pechuga de pollo a la plancha, jugosa y ligera. Suplemento: +1€ bocadillo, +0,50€ montado.", "precio": "7,00 - 4,50€"},
+      {"nombre": "Calamares", "descripcion": "Clásico bocata de calamares a la andaluza, crujientes y sabrosos. Suplemento: +1€ bocadillo, +0,50€ montado.", "precio": "7,00 - 4,50€"},
+      {"nombre": "Morcilla", "descripcion": "Morcilla bien hecha, con un toque especiado que no deja indiferente. Suplemento: +1€ bocadillo, +0,50€ montado.", "precio": "7,00 - 4,50€"},
+      {"nombre": "Vegetal", "descripcion": "Lechuga, tomate, huevo duro y mayonesa para una opción fresca y ligera. Suplemento: +1€ bocadillo, +0,50€ montado.", "precio": "7,00 - 4,50€"},
+      {"nombre": "Atun Pimientos", "descripcion": "Atún con pimientos del piquillo asados, ideal para todos los gustos. Suplemento: +1€ bocadillo, +0,50€ montado.", "precio": "7,00 - 4,50€"},
+      {"nombre": "Oreja Salsa Brava", "descripcion": "Oreja a la plancha con potente salsa brava. Puro sabor castizo. Suplemento: +1€ bocadillo, +0,50€ montado.", "precio": "7,00 - 4,50€"},
+      {"nombre": "Tortilla", "descripcion": "Tortilla de patatas jugosa, servida en pan tierno. Suplemento: +1€ bocadillo, +0,50€ montado.", "precio": "7,00 - 4,50€"},
+      {"nombre": "Jamón", "descripcion": "Jamón serrano curado de calidad, en pan crujiente. Suplemento: +1€ bocadillo, +0,50€ montado.", "precio": "7,00 - 4,50€"},
+      {"nombre": "Atenea", "descripcion": "Especial de la casa con ingredientes seleccionados.", "precio": "10,00 - 5,50€"},
+      {"nombre": "Pepito Ternera", "descripcion": "Clásico pepito de ternera tierna, pimiento, queso y jamón a la plancha en pan tierno. Suplemento: +1€ bocadillo, +0,50€ montado.", "precio": "14,00€ - 7,00€"}
     ]
   },
   {
-    "categoria": "Bebidas",
+    "categoria": "Ensaladas",
     "productos": [
-      {"nombre": "Coca-Cola", "descripcion": "Botella de 33cl bien fría para refrescarte al instante.", "precio": "0,00€"},
-      {"nombre": "Cerveza", "descripcion": "Caña o botellín de cerveza nacional, ideal para acompañar tu comida.", "precio": "0,00€"},
-      {"nombre": "Agua Mineral", "descripcion": "Botella de 50cl, disponible fría o del tiempo.", "precio": "0,00€"},
-      {"nombre": "Zumo de Naranja", "descripcion": "Exprimido al momento, 100% natural y lleno de sabor.", "precio": "0,00€"},
-      {"nombre": "Tinto de Verano", "descripcion": "Vino tinto con gaseosa y rodaja de limón, fresco y ligero.", "precio": "0,00€"},
-      {"nombre": "Café con Hielo", "descripcion": "Café espresso intenso servido con cubitos de hielo.", "precio": "0,00€"},
-      {"nombre": "Vermú de Grifo", "descripcion": "Vermú rojo servido bien frío con aceituna. ¡Puro sabor clásico!", "precio": "0,00€"},
-      {"nombre": "Refresco Limón", "descripcion": "Refresco de limón 33cl, perfecto para días calurosos.", "precio": "0,00€"},
-      {"nombre": "Agua con Gas", "descripcion": "Botella de 33cl, ideal para quienes prefieren las burbujas.", "precio": "0,00€"},
-      {"nombre": "Copa de Vino", "descripcion": "Copa de vino tinto o blanco de la casa para maridar tu comida.", "precio": "0,00€"}
+      {"nombre": "Mixta", "descripcion": "Lechuga, tomate, atún, huevo duro, cebolla y aceitunas.", "precio": "6,50€"},
+      {"nombre": "Atenea", "descripcion": "Especial de la casa con ingredientes seleccionados.", "precio": "9,50€"},
+      {"nombre": "Cesar", "descripcion": "Lechuga romana, pollo crujiente, queso fresco y picatostes con salsa César.", "precio": "9,50€"}
+    ]
+  },
+  {
+    "categoria": "Sandwitches",
+    "productos": [
+      {"nombre": "Mixto", "descripcion": "Sándwich clásico de queso fundido y jamón york.", "precio": "4,00€"},
+      {"nombre": "Cubano", "descripcion": "Sándwich con jamón york, queso y huevo a la plancha.", "precio": "4,50€"},
+      {"nombre": "Atenea", "descripcion": "Especial de la casa con ingredientes seleccionados.", "precio": "6,50€"},
+      {"nombre": "Vegetal", "descripcion": "Espárrago, mayonesa, cebolla, maíz y lechuga fresca.", "precio": "5,50€"},
+      {"nombre": "Noruego", "descripcion": "Mantequilla, queso brie y salmón frío en pan tierno.", "precio": "7,50€"}
     ]
   },
   {
@@ -127,6 +110,20 @@
     "categoria": "Promociones",
     "productos": [
       {"nombre": "Tanque de 3L + Ración", "descripcion": "Tanque de 3 litros de tu bebida favorita acompañado de una ración a elegir. Ideal para compartir.", "precio": "20,00€"}
+    ]
+  },
+  {
+    "categoria": "Bebidas",
+    "productos": [
+      {"nombre": "Refrescos", "descripcion": "Refrescos variados de 33cl.", "precio": "2,70€"},
+      {"nombre": "Cerveza", "descripcion": "Cerveza nacional en tercio o doble.", "precio": "2,80€"},
+      {"nombre": "Tinto de Verano", "descripcion": "Vino tinto con gaseosa y hielo.", "precio": "3,00€"},
+      {"nombre": "Agua", "descripcion": "Agua mineral en botella pequeña o grande.", "precio": "1,50 - 2,50€"},
+      {"nombre": "Jarra de Cerveza", "descripcion": "Jarra fría de cerveza Victoria Málaga.", "precio": "4,50€"},
+      {"nombre": "Vino Rioja", "descripcion": "Copa de vino Rioja.", "precio": "2,70€"},
+      {"nombre": "Vino Ribera", "descripcion": "Copa de vino Ribera del Duero.", "precio": "2,80€"},
+      {"nombre": "Vino Semidulce", "descripcion": "Copa de vino blanco semidulce.", "precio": "2,60€"},
+      {"nombre": "Vino Rueda", "descripcion": "Copa de vino blanco Rueda.", "precio": "2,70€"}
     ]
   },
   {

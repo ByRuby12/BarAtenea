@@ -1,10 +1,10 @@
 {
   "nombreBar": "Bar Atenea",
   "direccion": "Av. de Orovilla, 46, Villaverde, 28041 Madrid",
-  "telefono": "918791714",
-  "email": "info@baratenea.com",
-  "horario": "Lunes a Domingos: 7:00 - 00:00",
-  "enlaceGoogleMaps": "https://maps.app.goo.gl/e11CLYvdqsRTwsQx7",
+  "telefono": "624675395",
+  "email": "barcafeteriaatenea8797@gmail.com",
+  "horario": "Martes a Viernes: 7:00 - 00:00 <br>⏰ Sábado a Domingos: 8:00 - 00:30",
+  "enlaceGoogleMaps": "https://maps.app.goo.gl/GBMxDGPVT4r3oWYJ9",
   "logo": "imagenes/logo-bar.png",
   "banner": "imagenes/banner-bar.jpg",
   "descripcion": "Bar Atenea - Tu lugar para disfrutar de deliciosos desayunos, raciones, hamburguesas, bocadillos y más.",
@@ -13,10 +13,10 @@
   "iconoFavicon": "imagenes/logo-bar-2.png",
   "footerDerechos": "Copyright ©{year} Derechos reservados para {bar}",
   "redes": {
-    "twitter": "https://twitter.com/baratenea",
-    "tiktok": "https://tiktok.com/@baratenea",
-    "youtube": "https://youtube.com/@baratenea",
-    "instagram": "https://instagram.com/baratenea"
+    "twitter": "#",
+    "tiktok": "#",
+    "youtube": "#",
+    "instagram": "#"
   },
   "colores": {
     "color-header-bg": "#1e1e1e",

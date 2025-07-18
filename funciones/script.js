@@ -109,7 +109,7 @@ function renderContactoSection() {
         <div>⏰ ${info.horario || ''}</div>
         <div>📧 ${info.email || ''}</div>
         <div class="enlace-google-maps">
-          ${info.enlaceGoogleMaps ? `<a href="${info.enlaceGoogleMaps}" class="btn-reseña-google" target="_blank" rel="noopener">📱 Califícanos ahora</a><br>` : ''}
+          ${info.enlaceGoogleMaps ? `<a href="${info.enlaceGoogleMaps}" class="btn-reseña-google" target="_blank" rel="noopener">📱 Calificanos ahora</a><br>` : ''}
           ${info.telefono ? `<a href="tel:${info.telefono}" class="btn-contactar">📞 Contactar ahora</a>` : ''}
         </div>
       </div>
@@ -218,10 +218,14 @@ function inicializarWeb() {
       const year = new Date().getFullYear();
       const derechos = document.getElementById('footer-derechos');
       if (derechos) {
+        const autorDiv = document.createElement('div');
+        autorDiv.textContent = `${info.desarrollador || ''}`;
+        derechos.appendChild(autorDiv);
+
         if (info.footerDerechos) {
-          derechos.textContent = info.footerDerechos.replace('{year}', year).replace('{bar}', info.nombreBar || '');
+          derechos.appendChild(document.createTextNode(info.footerDerechos.replace('{year}', year).replace('{bar}', info.nombreBar || '')));
         } else {
-          derechos.textContent = `© ${year} ${info.nombreBar || ''}. Todos los derechos reservados.`;
+          derechos.appendChild(document.createTextNode(`© ${year} ${info.nombreBar || ''}`));
         }
       }
 

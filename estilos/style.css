@@ -1,5 +1,8 @@
 :root {
   /* ====== Colores generales de la web ====== */
+
+  --letras-pagina-web: 'Inter', 'Segoe UI', 'Montserrat', 'Roboto', 'Tahoma', 'Geneva', 'Verdana', sans-serif;
+
   --color-header-bg: #fff;
   --color-header-border: #fff;
   --color-logo-bg: #fff;
@@ -129,7 +132,7 @@
 }
 
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: var(--letras-pagina-web);
   background-color: var(--color-bg-main);
   color: var(--color-bar-title);
 }
@@ -456,7 +459,7 @@ header {
   flex: 1 1 auto;
 }
 .card .price {
-  margin-top: 0.8rem;
+  /*margin-top: 0.5rem;*/
   color: var(--color-card-price);
   font-weight: bold;
   font-size: 1.1rem;
@@ -464,7 +467,7 @@ header {
   padding: 0.3rem 0.8rem;
   border-radius: 8px;
   align-self: flex-end;
-  box-shadow: 0 1px 6px var(--color-card-price-shadow);
+  border: 1px solid var(--color-card-price-shadow);
 }
 @media (max-width: 900px) {
   .card {
@@ -625,7 +628,7 @@ header {
   background: linear-gradient(120deg, var(--color-contact-bg) 80%, var(--color-contact-gradient) 100%);
   border-radius: 18px;
   border: 1.5px solid var(--color-card-border);
-  margin: 1.5rem auto 1.5rem auto;
+  margin: 0rem auto 0.3rem auto;
   padding: 2.2rem 1.5rem 1.7rem 1.5rem;
   max-width: 400px;
   color: var(--color-contact-text);

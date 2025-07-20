@@ -635,7 +635,6 @@ header {
   position: relative;
   overflow: hidden;
   text-align: center;
-  display: flex;
   flex-direction: column;
   gap: 1.2rem;
   align-items: center;
@@ -800,8 +799,8 @@ header {
 /* Estilo para los datos simples de contacto (dirección y horario) */
 .contacto-section.contacto-simple .contacto-datos-simples {
   display: flex;
+  font-size: 14px;
   flex-direction: column;
-  gap: 0.7rem;
   align-items: center;
   width: 100%;
   margin: 0.5rem 0 0.2rem 0;
@@ -917,7 +916,7 @@ header {
   border-radius: 10px;
   text-decoration: none;
   box-shadow: 0 2px 12px var(--color-btn-reseña-shadow, #ffc107), 0 1px 6px var(--color-btn-reseña-shadow2, #ffc10755);
-  margin: 0.5rem auto 0 auto;
+  margin: 1rem auto 0 auto;
   border: 1.5px solid var(--color-btn-reseña-border);
   transition: background 0.18s, color 0.18s, box-shadow 0.18s, border 0.18s;
   cursor: pointer;

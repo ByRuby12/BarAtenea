@@ -203,21 +203,58 @@ function inicializarWeb() {
         logoFooter.alt = info.nombreBar || '';
       }
       const redes = info.redes || {};
+      let redesVisibles = 0;
       if (document.getElementById('footer-twitter')) {
-        document.getElementById('footer-twitter').href = redes.twitter || "#";
+        if (redes.twitter && redes.twitter !== "#") {
+          document.getElementById('footer-twitter').style.display = "";
+          document.getElementById('footer-twitter').href = redes.twitter;
+          redesVisibles++;
+        } else {
+          document.getElementById('footer-twitter').style.display = "none";
+        }
       }
       if (document.getElementById('footer-tiktok')) {
-        document.getElementById('footer-tiktok').href = redes.tiktok || "#";
+        if (redes.tiktok && redes.tiktok !== "#") {
+          document.getElementById('footer-tiktok').style.display = "";
+          document.getElementById('footer-tiktok').href = redes.tiktok;
+          redesVisibles++;
+        } else {
+          document.getElementById('footer-tiktok').style.display = "none";
+        }
       }
       if (document.getElementById('footer-youtube')) {
-        document.getElementById('footer-youtube').href = redes.youtube || "#";
+        if (redes.youtube && redes.youtube !== "#") {
+          document.getElementById('footer-youtube').style.display = "";
+          document.getElementById('footer-youtube').href = redes.youtube;
+          redesVisibles++;
+        } else {
+          document.getElementById('footer-youtube').style.display = "none";
+        }
       }
       if (document.getElementById('footer-instagram')) {
-        document.getElementById('footer-instagram').href = redes.instagram || "#";
+        if (redes.instagram && redes.instagram !== "#") {
+          document.getElementById('footer-instagram').style.display = "";
+          document.getElementById('footer-instagram').href = redes.instagram;
+          redesVisibles++;
+        } else {
+          document.getElementById('footer-instagram').style.display = "none";
+        }
       }
+      // Ocultar la barra de redes sociales si no hay ninguna visible
+      const barraRedes = document.querySelector('.footer-social-row');
+      if (barraRedes) {
+        barraRedes.style.display = redesVisibles > 0 ? "" : "none";
+      }
+      // Ocultar el divider si no hay redes sociales
+      const divider = document.querySelector('.footer-divider');
+      if (divider) {
+        divider.style.display = redesVisibles > 0 ? "" : "none";
+      }
+      // El footer de derechos reservados y autor SIEMPRE se muestra
       const year = new Date().getFullYear();
       const derechos = document.getElementById('footer-derechos');
       if (derechos) {
+        derechos.innerHTML = ""; // Limpiar antes de añadir
         const autorDiv = document.createElement('div');
         autorDiv.textContent = `${info.desarrollador || ''}`;
         derechos.appendChild(autorDiv);

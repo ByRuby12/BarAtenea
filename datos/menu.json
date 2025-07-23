@@ -3,10 +3,7 @@
     "categoria": "Desayunos",
     "productos": [
       {"nombre": "Café", "descripcion": "Café solo, cortado, americano o con leche.", "precio": "1,60€"},
-      {"nombre": "Infusión", "descripcion": "Variedad de infusiones calientes.", "precio": "1,60€"},
-      {"nombre": "Tostada", "descripcion": "Tostada de pan crujiente con aceite de oliva y tomate.", "precio": "0,00€"},
-      {"nombre": "Tostada con Mantequilla y Mermelada", "descripcion": "Tostada con mantequilla y mermelada a elegir.", "precio": "0,00€"},
-      {"nombre": "Tostada con Jamón", "descripcion": "Tostada con jamón serrano y tomate.", "precio": "0,00€"}
+      {"nombre": "Infusión", "descripcion": "Variedad de infusiones calientes.", "precio": "1,60€"}
     ]
   },
   {
@@ -97,7 +94,7 @@
       {"nombre": "Copa del Día", "descripcion": "Consulta nuestra copa especial del día con combinaciones únicas.", "precio": "6,00€"},
       {"nombre": "Cono Pequeño", "descripcion": "Cono de helado individual, ideal para los más pequeños (o no tan pequeños).", "precio": "2,30€"},
       {"nombre": "Cono Mediano", "descripcion": "Cono de tamaño medio con uno o dos sabores a elegir.", "precio": "4,50€"},
-      {"nombre": "Cono Artesana", "descripcion": "Helado artesanal servido en cono crujiente. Sabor auténtico.", "precio": "6,00€"},
+      {"nombre": "Cono Artesanal", "descripcion": "Helado artesanal servido en cono crujiente. Sabor auténtico.", "precio": "6,00€"},
       {"nombre": "Vasito Pequeño", "descripcion": "Helado en vasito pequeño para darte un capricho sin excesos.", "precio": "2,30€"},
       {"nombre": "Vasito Mediano", "descripcion": "Tamaño ideal para disfrutar dos sabores de tu elección.", "precio": "4,50€"},
       {"nombre": "Vasito Grande", "descripcion": "Para verdaderos amantes del helado. ¡Elige hasta tres sabores!", "precio": "6,00€"},

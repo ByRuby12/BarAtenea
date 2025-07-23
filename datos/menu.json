@@ -72,7 +72,7 @@
     ]
   },
   {
-    "categoria": "Sandwitches",
+    "categoria": "Sandwich",
     "productos": [
       {"nombre": "Mixto", "descripcion": "Sándwich clásico de queso fundido y jamón york.", "precio": "4,00€"},
       {"nombre": "Cubano", "descripcion": "Sándwich con jamón york, queso y huevo a la plancha.", "precio": "4,50€"},
